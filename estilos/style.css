@@ -76,19 +76,20 @@
 
     /******************Cuerpo Colores*************************/
     body{
-        background-color: #E0FFF2;
-        background-image: url(../images/tejido.jpg);
+        background: linear-gradient(to right, #b0e9e6 10%,  #E0FFF2  50%, #b0e9e6 90%) ;
+        /* background-image: url(../images/tejido.jpg); */
         /* background-blend-mode:exclusion; */
         background-blend-mode:luminosity; 
         
     }
     section{
-        background-color: #F9F1DD;
+        background: linear-gradient(to top left, #F9F1DD, #fffdf6, #F9F1DD ) ;
         min-height: 1vh;
         border-radius: 15px;
     }
     article{
         background-color: #FFE0FB;
+        border-radius: 15px;
     }
     footer{
         background-color: #121720;
@@ -157,7 +158,7 @@
         background-color: rgba(190, 210, 244, 80%);
         z-index: 1;
         padding: 50px;
-        border: 5px solid #85aef5;
+        border-bottom: 5px solid rgba(132, 174, 245, 0.3);
     }
     .cabecera h1{
         position: relative;
@@ -181,8 +182,8 @@
 
     .barraNavegacion .listNav .listNavEle{        
         border: 2px solid #F9F1DD;
-        background-color: #E0FFF2;        
-        border-radius: 15%;
+        background: linear-gradient(to right top, #E0FFF2 70% , #c2ffe6);        
+        border-radius: 50px;
         line-height: 20px;
     }
 
@@ -197,10 +198,14 @@
     }
 
     .barraNavegacion .listNav .sele{
-        background-color: #FFE0FB;
+        background: linear-gradient(to right, #f7c5f0, #FFE0FB);
         font-weight: bold;
+        border: 2px solid #c2ffe6;
     }
-
+    
+    .barraNavegacion .listNav .sele i{  
+        color: #c2ffe6;
+    }
     .iconNav{ 
         color: #BED2F4;
         margin-right: 5px;
@@ -367,11 +372,13 @@ form .bloqueFormulario{
 
 
 /****************Animaciones************************************************************************************/
-.barraNavegacion .listNav .listNavEle:not(.sele):hover , .barraNavegacion .listNav .listNavEle:not(.sele):hover span{
-    color:#FFE0FB;
-    background-color: #85aef5;        
-    transition: 0.2s;
+.barraNavegacion .listNav .listNavEle:not(.sele):hover , .barraNavegacion .listNav .listNavEle:not(.sele):hover {
+    color:#85aef5;
+    background: linear-gradient(to right top, #c2ffe6 70% , #E0FFF2); 
+    /*transition: 0.2s;*/
+    transform: scale(1.1);
     font-weight: 900;
+    box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
     
 }
 .animacion {
@@ -598,7 +605,7 @@ form .bloqueFormulario{
         height: auto;    
         font-size: 22px;
         padding: 20px;
-        border: 5px solid #85aef5;
+        border-bottom: 2px solid rgba(132, 174, 245, 0.3);
         box-sizing: border-box;
     }
     .cabecera .logo{
