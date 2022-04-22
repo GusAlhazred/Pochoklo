@@ -159,6 +159,7 @@
         z-index: 1;
         padding: 50px;
         border-bottom: 5px solid rgba(132, 174, 245, 0.3);
+        box-sizing: content-box;
     }
     .cabecera h1{
         position: relative;
@@ -195,6 +196,7 @@
         list-style: none;
         font-weight: 700;
         text-align: center;
+        box-sizing: content-box;
     }
 
     .barraNavegacion .listNav .sele{
@@ -211,11 +213,18 @@
         margin-right: 5px;
     }
 
+
+/***********************************************Especificos******************************************************************************************************************************/
+.decoImgCaro{
+    height: 50vh;
+    object-fit: contain;
+    border: #F9F1DD 5px solid;
+    border-radius: 50px;
+}
 /****************************************Cuerpo***************************/
 .margenSuperiorPagina{
     margin-top: 300px;
 }
-/***********************************************Especificos******************************************************************************************************************************/
 /*****************************************Galeria********************/
 .fGal{
     border: #F9F1DD 20px solid;
