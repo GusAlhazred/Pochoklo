@@ -15,56 +15,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-
-
 <body>
-    <div class="containerPagina">
-        <header class="cabecera"><!--Cabecera-->
-            <img src="./iconos/pochoklo-logo.png" alt="Logo Marca" class="logo"><h1 class="">Pochoklo</h1>
-        
-            <nav class="barraNavegacion"> <!--Menu Navegacion-->
-                <ul type="None" class="listNav"> 
-                    <li title="Inicio" class="sele listNavEle listNavEleProp"><i class="fa-solid fa-house-user iconNav"></i></li>
-                    <li title="Nosotros" class="listNavEle listNavEleProp animacion"><a href="./pages/Nosotros.html"><i class="fa-solid fa-people-roof iconNav"></i></a></li>
-                    <li title="Galeria" class="listNavEle listNavEleProp animacion"><a href="./pages/galeria.html"><i class="fa-solid fa-image iconNav"></i></a></li>
-                    <li title="Contactanos" class="listNavEle listNavEleProp animacion"><a href="./pages/Contactos.html"><i class="fa-solid fa-envelope iconNav"></i></a></li>
-                    <li title="Clases" class="listNavEle listNavEleProp animacion"><a href="./pages/clases.html"><i class="fa-solid fa-book iconNav"></i></a></li>
-                    <li title="Tienda" class="listNavEle listNavEleProp animacion"><a href="./pages/Tienda.html"><i class="fa-brands fa-empire iconNav"></i></a></li>
-                </ul>
-            </nav>
-            
-        </header>
-    
-        <!-----------------Principal------------------------------------------------>
-        <main class="principal espaciado flex centrado margenSuperiorPagina">
-            <!-----------------Seccion------------------------------------------------>
-            <section class="espaciado">                
-                <h2>Sobre Nosotros:</h2>
-                <article class="espaciado flex">
-                    <h3 class="espaciado">Mujer1</h3>
-                    <div class=" contPlanillaPresentacion flex espaciado">
-                        <p class="textInfo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloribus maiores neque cumque quam? Quas exercitationem doloremque nobis possimus accusamus, illo laudantium laboriosam doloribus, perferendis minus et porro? Doloribus, iure!
-                        Libero architecto quos numquam et expedita, velit adipisci nulla? Fugit, doloribus dignissimos. Ipsam architecto esse molestias dolores quidem. Doloremque repudiandae quo maxime qui fuga, ab nesciunt placeat assumenda laborum totam.
-                        Earum necessitatibus repudiandae voluptatum explicabo modi expedita deserunt optio ipsam aliquid? Placeat, aspernatur. Maxime eos debitis quo! Repellendus id alias, animi dicta, modi exercitationem odio ratione aspernatur labore aperiam laboriosam.
-                        At molestiae delectus esse, recusandae asperiores distinctio soluta, maiores sapiente, et cum ullam! Nisi dolore perferendis tempora ratione quis odit, dicta exercitationem laborum sapiente optio necessitatibus obcaecati similique commodi officia?
-                        Possimus veritatis blanditiis voluptatem fuga asperiores sunt error temporibus delectus voluptatum consequatur nemo illo dolores accusamus culpa quas incidunt, modi cupiditate. Ipsum pariatur, nostrum commodi laborum perspiciatis ut perferendis explicabo.</p>
-                        <img src="../images/Mujer1.jpg" class="decoImagenFix" alt="Mujer1"> 
-                    </div>
-                    <h3 class="espaciado">Mujer2</h3>
-                    <div class="contPlanillaPresentacion flex espaciado">
-                        <p class="textInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet commodi ea nihil. Excepturi voluptatum dolor repellendus aperiam dolore, ea praesentium autem qui iusto dolorem enim eligendi sapiente laboriosam illo.
+    <!-- Cabecera ------------------------------------------------------>
+    <div class="container-fluid cabecera">
+        <img src="../iconos/pochoklo-logo.png" alt="Logo Marca" class="logo">
+        <h1 class="">Pochoklo</h1>
+    <!--Menu Navegacion------------------------------------------------->    
+        <nav class="barraNavegacion"> 
+            <ul type="None" class="listNav"> 
+                <li title="Inicio" class=" listNavEle listNavEleProp animacion"><a href="../index.html"><i class="fa-solid fa-house-user iconNav"></i></a></li>
+                <li title="Nosotros" class="listNavEle listNavEleProp sele"><i class="fa-solid fa-people-roof iconNav"></i></a></li>
+                <li title="Galeria" class="listNavEle listNavEleProp animacion"><a href="./galeria.html"><i class="fa-solid fa-image iconNav"></i></a></li>
+                <li title="Contactanos" class="listNavEle listNavEleProp animacion"><a href="./Contactos.html"><i class="fa-solid fa-envelope iconNav"></i></a></li>
+                <li title="Clases" class="listNavEle listNavEleProp animacion"><a href="./clases.html"><i class="fa-solid fa-book iconNav"></i></a></li>
+                <li title="Tienda" class="listNavEle listNavEleProp animacion"><a href="./Tienda.html"><i class="fa-brands fa-empire iconNav"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Principal------------------------------------------------------->
+    <main class="container-sm margenSuperiorPagina">
+        <Section class="container-md espaciado  centrado ">
+            <h2>Sobre Nosotros:</h2>
+            <Article class="container-lg margen row centrado">
+                <!--Mujer 1------------------------------------------------------->
+                <h3 class="espaciado">Mujer1</h3>
+                <div class="col-md-8 col-xl-9">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloribus maiores neque cumque quam? Quas exercitationem doloremque nobis possimus accusamus, illo laudantium laboriosam doloribus, perferendis minus et porro? Doloribus, iure!
+                    Libero architecto quos numquam et expedita, velit adipisci nulla? Fugit, doloribus dignissimos. Ipsam architecto esse molestias dolores quidem. Doloremque repudiandae quo maxime qui fuga, ab nesciunt placeat assumenda laborum totam.
+                    Earum necessitatibus repudiandae voluptatum explicabo modi expedita deserunt optio ipsam aliquid? Placeat, aspernatur. Maxime eos debitis quo! Repellendus id alias, animi dicta, modi exercitationem odio ratione aspernatur labore aperiam laboriosam.
+                    At molestiae delectus esse, recusandae asperiores distinctio soluta, maiores sapiente, et cum ullam! Nisi dolore perferendis tempora ratione quis odit, dicta exercitationem laborum sapiente optio necessitatibus obcaecati similique commodi officia?
+                    Possimus veritatis blanditiis voluptatem fuga asperiores sunt error temporibus delectus voluptatum consequatur nemo illo dolores accusamus culpa quas incidunt, modi cupiditate. Ipsum pariatur, nostrum commodi laborum perspiciatis ut perferendis explicabo.</p>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                    <img src="../images/Mujer1.jpg" class="decoImagenFix" alt="Mujer1">
+                </div>
+                
+            </Article>
+            <!--Mujer 2------------------------------------------------------->
+            <Article class="container-lg margen row centrado">
+                <h3 class="espaciado">Mujer2</h3>
+                <div class="col-md-8 col-xl-9">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet commodi ea nihil. Excepturi voluptatum dolor repellendus aperiam dolore, ea praesentium autem qui iusto dolorem enim eligendi sapiente laboriosam illo.
                         Minus quia ad ex nesciunt nostrum. Illum accusamus magnam totam culpa quae nam! Distinctio quas nihil animi adipisci! Velit, officia molestiae quia nostrum voluptatum cum fuga repudiandae atque! Pariatur, ipsum!</p>
-                        <img src="../images/Mujer2.jpg" class="decoImagenFix" alt="Mujer2">
-                    </div>                   
-                </article>
-            </section>
-        </div>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                    <img src="../images/Mujer2.jpg" class="decoImagenFix" alt="Mujer2">
+                </div>
+                
+            </Article>
+        </Section>
     </main>
 
-    <!--Pie de pagina-->
-    <footer class="pieDePagina espaciadoPorDentro">
+    <!--------------------------------Pie de pagina------------------------------------------------------------------------->
+    <footer class="pieDePagina espaciado container-fluid">
         <p class="fTitulo">Seguines en nuestras redes!</p>
-        <!--<a href="https://www.instagram.com/pochoklo_20/?hl=es-la"><img src="./iconos/Instagram.png" height="20px" width="20px" alt="Insta"><label>@Pochoklo_20</label></a>-->
         <div class=" fRedes">
             <a href="https://www.instagram.com/pochoklo_20/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram iconoRedes animacion resaltarRedSocial"></i><label> Mira nuestro insta!</label></a>
             <a href="https://api.whatsapp.com/send?phone=+54 9 11 5903 7114" target="_blank"><i class="fa-brands fa-whatsapp-square iconoRedes animacion resaltarRedSocial"></i><label for=""> Encontranos en nuestro WhatsApp</label></a>
@@ -73,19 +78,19 @@
         </div>
         
         <ul class="listNav espaciado fNav">
-            <li class="listNavEleProp"><a href="../index.html">Inicio</a></li>
-            <li class="listNavEleProp"><a href="#">Nosotros</a></li>
-            <li class="listNavEleProp"><a href="./galeria.html">Galeria</a></li>
-            <li class="listNavEleProp"><a href="./Contactos.html">Contactos</a></li>
-            <li class="listNavEleProp"><a href="./clases.html">Clases</a></li>
-            <li class="listNavEleProp"><a href="./Tienda.html">Tienda</a></li>
+            <li class="listNavEleProp fEle"><a href="#">Inicio</a></li>
+            <li class="listNavEleProp fEle"><a href="./pages/Nosotros.html">Nosotros</a></li>
+            <li class="listNavEleProp fEle"><a href="./pages/galeria.html">Galeria</a></li>
+            <li class="listNavEleProp fEle"><a href="./pages/Contactos.html">Contactos</a></li>
+            <li class="listNavEleProp fEle"><a href="./pages/clases.html">Clases</a></li>
+            <li class="listNavEleProp fEle"><a href="./pages/Tienda.html">Tienda</a></li>
         </ul>
-
     </footer>
-</div>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
+    
 </body>
 </html>
