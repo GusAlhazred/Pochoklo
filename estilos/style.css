@@ -230,6 +230,17 @@
         font-size: 0.8rem;
     }
 
+    /**************************Pie de Pagina*************************************/
+    
+    .pieDePagina{
+        height: auto;
+        width: auto;
+    }
+    
+
+    .pieDePagina .listNav a{
+        font-size: 0.5rem;
+    }
 
 /***********************************************Especificos******************************************************************************************************************************/
 .decoImgCaro{
@@ -398,14 +409,19 @@ form .bloqueFormulario{
 
 
 /****************Animaciones************************************************************************************/
-.barraNavegacion .listNav .listNavEle:not(.sele):hover , .barraNavegacion .listNav .listNavEle:not(.sele):hover {
-    color:#85aef5;
-    background: linear-gradient(to right top, #c2ffe6 70% , #E0FFF2); 
+.barraNavegacion .listNav .listNavEle:not(.sele):hover {
+    
+    background: radial-gradient(#5174af 60% , #BED2F4); 
     /*transition: 0.2s;*/
+    background-position: left;
     transform: scale(1.1);
     font-weight: 900;
+    border-color: #f7c5f0;
     box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
     
+}
+.barraNavegacion .listNav .listNavEle:not(.sele):hover i{
+    color:#f7c5f0;
 }
 .animacion {
     transition: all 500ms;
@@ -495,7 +511,9 @@ form .bloqueFormulario{
     .textInfo{
         width: 55%;
     }
-    
+    .fRedes label{
+        font-size: 0.5rem;
+    }
     
 }
 
@@ -611,7 +629,7 @@ form .bloqueFormulario{
         font-weight: 100;
 
     }
-    .pieDePagina li{
+    .pieDePagina .fEle{
         margin-right: 0px;
         width: auto;
         padding: 2px;
@@ -678,15 +696,7 @@ form .bloqueFormulario{
         font-size: 1rem;
     }
     .cabecera h1{
-        position: relative;
         left: 40%;
-        /* top: -50px; */
-        font-family: 'Titan One', cursive;    
-        -webkit-text-stroke: 2px;
-        -webkit-text-stroke-color: #BED2F4;
-        font-variant: small-caps;
-        color: #85aef5;
-        transform: translate(-100%);
     }
     .listNavEleProp{
         height: 0.8rem;
