@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos! Pochoklo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="icon" href="../iconos/pochoklo-logo.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mali:wght@300&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+    <!-- Cabecera ------------------------------------------------------>
+    <div class="container-fluid cabecera row">
+        <div class="col">
+            <img src="../iconos/pochoklo-logo.png" alt="Logo Marca" class="logo">
+        </div>
+        <div class="col">
+            <div class="row align-items-start">
+                <div class="col offset-2">
+                    <h1 class="">Pochoklo</h1>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col"><!--Menu Navegacion------------------------------------------------->    
+                    <nav class="barraNavegacion"> 
+                        <ul type="None" class="listNav"> 
+                            <li title="Inicio" class=" listNavEle listNavEleProp animacion"><a href="../index.html"><i class="fa-solid fa-house-user iconNav"></i></a></li>
+                            <li title="Nosotros" class="listNavEle listNavEleProp animacion"><a href="./Nosotros.html"><i class="fa-solid fa-people-roof iconNav"></i></a></li>
+                            <li title="Galeria" class="listNavEle listNavEleProp animacion"><a href="./galeria.html"><i class="fa-solid fa-image iconNav"></i></a></li>
+                            <li title="Contactanos" class="listNavEle listNavEleProp sele"><i class="fa-solid fa-envelope iconNav"></i></a></li>
+                            <li title="Clases" class="listNavEle listNavEleProp animacion"><a href="./clases.html"><i class="fa-solid fa-book iconNav"></i></a></li>
+                            <li title="Tienda" class="listNavEle listNavEleProp animacion"><a href="./Tienda.html"><i class="fa-brands fa-empire iconNav"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!--Principal------------------------------------------------------->
+    <main class="container-sm margenSuperiorPagina">
+
+            <!-----------------Formulario------------------------------------------------>
+            <section class="espaciado">                
+                <h2>Contactanos!</h2>
+                <article class="artFormW espaciado">
+                        <form action="" method="POST" name="Contactanos!" > <!--Formulario-->
+                            <p>Comunicate con nosotros por cualquiera de nuestras redes sociales o dejanos tus comentarios aca para que te respondamos al mail que nos des!</p>
+                            <div class="bloqueFormulario">  <!--Nombre-->
+                                <label for="datos-nombre">Nombre:</label>
+                                <input type="Text" name="datos-nombre" placeholder="Nombre"> 
+                            </div>
+                            <div class="bloqueFormulario"> <!--email-->
+                                <label for="datos-email">eMail</label>
+                                <input type="email" name="datos-email" placeholder="ejemplo@dominio.com" required>  
+                            </div>                            
+                            <p>Temas de consulta:</p> <!--Tema consulta-->
+                            <div class="bloqueFormulario"> 
+                                <input type="checkbox" name="datos-temas-clases"><label for="datos-temas-clases">Clases</label>
+                                <input type="checkbox" name="datos-temas-productos"><label for="datos-temas-productos">Productos</label>
+                                <input type="checkbox" name="datos-temas-consultas"><label for="datos-temas-consultas">Otros</label>              
+                            </div>
+                            <p>Mensaje:</p> <!--Consulta-->
+                            <textarea class="noReSize respoReSizeFramesTxtArea centrado"></textarea> 
+                            <div class="bloqueFormulario maxLargo2Items"> <!--Botonera Formulario-->
+                                <input type=button name="enviar" value="Enviar" class="boton">
+                                <input type="reset" name="limpiar" value="Limpiar" class="boton">
+                            </div>
+                        </form>
+                </article>
+            </section>
+        
+            <!-----------------Derecha------------------------------------------------>
+            <section class="espaciado">
+
+                <!-----------------Redes------------------------------------------------>
+                <article class="espaciado">
+                    <h2>Clickea en nuestras redes</h2>
+                    <div>
+                        <a href="https://www.instagram.com/pochoklo_20/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram iconoRedes animacion resaltarRedSocial"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=+54 9 11 5903 7114" target="_blank"><i class="fa-brands fa-whatsapp-square iconoRedes animacion resaltarRedSocial"></i></a>
+                        <a href="https://www.facebook.com/groups/Grativiajes" target="_blank"><i class="fa-brands fa-facebook-square iconoRedes animacion resaltarRedSocial"></i></a>
+                    </div>
+                </article>
+
+                <!-----------------Tabla------------------------------------------------>
+                <article class="espaciado">
+                    <div class="espaciado"><!--Titulo Tabla-->
+                        <table class="">
+                            <caption>Dias disponibles</caption> 
+                            <tr >
+                                <th><label for=""class="">Horarios</label></th>
+                                <th>
+                                    <label for=""class="">Viernes</label>
+                                </th>
+                                <th>
+                                    <label for=""class="respoHide">Sabado</label>
+                                </th>
+                                <th>
+                                    <label for=""class="">Domingo</label>
+                                </th>
+                            </tr>
+                            <tr class="par">
+                                <td><label for="">15hs</label></td>
+                                <td><input type="checkbox" disabled="disabled"></td>
+                                <td><input type="checkbox" checked disabled="disabled"></td>
+                                <td><input type="checkbox"  disabled="disabled"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">16hs</label></td>
+                                <td><input type="checkbox" disabled="disabled" checked></td>
+                                <td><input type="checkbox" disabled="disabled" ></td>
+                                <td><input type="checkbox"  disabled="disabled"checked></td>
+                            </tr>
+                            <tr class="par">
+                                <td><label for="">17hs</label></td>
+                                <td><input type="checkbox" disabled="disabled" ></td>
+                                <td><input type="checkbox" disabled="disabled" checked></td>
+                                <td><input type="checkbox" disabled="disabled" ></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">18hs</label></td>
+                                <td><input type="checkbox" disabled="disabled" ></td>
+                                <td><input type="checkbox" disabled="disabled"; checked></td>
+                                <td><input type="checkbox" disabled="disabled" checked></td>
+                            </tr>
+                            <tr class="par">
+                                <td><label for="">19hs</label></td>
+                                <td><input type="checkbox" disabled="disabled" checked></td>
+                                <td><input type="checkbox" disabled="disabled" ></td>
+                                <td><input type="checkbox" disabled="disabled" ></td>
+                            </tr>
+                        </table>
+                    </div>                    
+                </article>
+
+                <!-----------------Mapa------------------------------------------------>
+                <article class="espaciado">                
+                        <h2>O veni a visitarnos!</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13106.964296594846!2d-58.383588362525465!3d-34.78729310076698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3194a44b3ed%3A0xb3c4c71736efabce!2sParque%20Finky!5e0!3m2!1ses-419!2sar!4v1648174181465!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="respoReSizeFrames"></iframe>
+                </article>
+            </section>   
+        </div>
+    </main>
+
+    <!--Pie de pagina-->
+    <footer class="pieDePagina espaciadoPorDentro">
+        <p class="fTitulo">Seguines en nuestras redes!</p>
+        <!--<a href="https://www.instagram.com/pochoklo_20/?hl=es-la"><img src="./iconos/Instagram.png" height="20px" width="20px" alt="Insta"><label>@Pochoklo_20</label></a>-->
+        <div class=" fRedes">
+            <a href="https://www.instagram.com/pochoklo_20/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram iconoRedes animacion resaltarRedSocial"></i><label> Mira nuestro insta!</label></a>
+            <a href="https://api.whatsapp.com/send?phone=+54 9 11 5903 7114" target="_blank"><i class="fa-brands fa-whatsapp-square iconoRedes animacion resaltarRedSocial"></i><label for=""> Encontranos en nuestro WhatsApp</label></a>
+            <a href="https://www.facebook.com/groups/Grativiajes"><i class="fa-brands fa-facebook-square iconoRedes animacion resaltarRedSocial"></i><label for=""> Tambien tenemos Facebook!</label></a>
+            
+        </div>
+        
+        <ul class="listNav espaciado fNav">
+            <li class="listNavEleProp"><a href="../index.html">Inicio</a></li>
+            <li class="listNavEleProp"><a href="./Nosotros.html">Nosotros</a></li>
+            <li class="listNavEleProp"><a href="./galeria.html">Galeria</a></li>
+            <li class="listNavEleProp"><a href="#">Contactos</a></li>
+            <li class="listNavEleProp"><a href="./clases.html">Clases</a></li>
+            <li class="listNavEleProp"><a href="./Tienda.html">Tienda</a></li>
+        </ul>
+
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -18,25 +18,36 @@
 
 
 <body>
-    <div class="containerPagina">
-        <header class="cabecera"><!--Cabecera-->
-            <img src="./iconos/pochoklo-logo.png" alt="Logo Marca" class="logo"><h1 class="">Pochoklo</h1>
-        
-            <nav class="barraNavegacion"> <!--Menu Navegacion-->
-                <ul type="None" class="listNav"> 
-                    <li title="Inicio" class="sele listNavEle listNavEleProp"><i class="fa-solid fa-house-user iconNav"></i></li>
-                    <li title="Nosotros" class="listNavEle listNavEleProp animacion"><a href="./pages/Nosotros.html"><i class="fa-solid fa-people-roof iconNav"></i></a></li>
-                    <li title="Galeria" class="listNavEle listNavEleProp animacion"><a href="./pages/galeria.html"><i class="fa-solid fa-image iconNav"></i></a></li>
-                    <li title="Contactanos" class="listNavEle listNavEleProp animacion"><a href="./pages/Contactos.html"><i class="fa-solid fa-envelope iconNav"></i></a></li>
-                    <li title="Clases" class="listNavEle listNavEleProp animacion"><a href="./pages/clases.html"><i class="fa-solid fa-book iconNav"></i></a></li>
-                    <li title="Tienda" class="listNavEle listNavEleProp animacion"><a href="./pages/Tienda.html"><i class="fa-brands fa-empire iconNav"></i></a></li>
-                </ul>
-            </nav>
-            
-        </header>
-    
-        <!-----------------Principal------------------------------------------------>
-        <main class="principal espaciado flex centrado margenSuperiorPagina"> 
+    <!-- Cabecera ------------------------------------------------------>
+    <div class="container-fluid cabecera row">
+        <div class="col">
+            <img src="../iconos/pochoklo-logo.png" alt="Logo Marca" class="logo">
+        </div>
+        <div class="col">
+            <div class="row align-items-start">
+                <div class="col offset-2">
+                    <h1 class="">Pochoklo</h1>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col"><!--Menu Navegacion------------------------------------------------->    
+                    <nav class="barraNavegacion"> 
+                        <ul type="None" class="listNav"> 
+                            <li title="Inicio" class=" listNavEle listNavEleProp animacion"><a href="../index.html"><i class="fa-solid fa-house-user iconNav"></i></a></li>
+                            <li title="Nosotros" class="listNavEle listNavEleProp animacion"><a href="./Nosotros.html"><i class="fa-solid fa-people-roof iconNav"></i></a></li>
+                            <li title="Galeria" class="listNavEle listNavEleProp animacion"><a href="./galeria.html"><i class="fa-solid fa-image iconNav"></i></a></li>
+                            <li title="Contactanos" class="listNavEle listNavEleProp animacion"><a href="./Contactos.html"><i class="fa-solid fa-envelope iconNav"></i></a></li>
+                            <li title="Clases" class="listNavEle listNavEleProp animacion"><a href="./clases.html"><i class="fa-solid fa-book iconNav"></i></a></li>
+                            <li title="Tienda" class="listNavEle listNavEleProp sele"><i class="fa-brands fa-empire iconNav"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!--Principal------------------------------------------------------->
+    <main class="container-sm margenSuperiorPagina">
 
             <!-----------------Tienda------------------------------------------------>
             <section class="espaciado">                

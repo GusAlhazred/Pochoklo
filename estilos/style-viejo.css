@@ -448,7 +448,7 @@ form .bloqueFormulario{
         grid-template-columns: repeat(2, auto);
     }
     
-        /*****************************************Galeria********************/
+    /*****************************************Galeria********************/
     .fGal{
         border: #F9F1DD 10px solid;
         border-radius: 40px;

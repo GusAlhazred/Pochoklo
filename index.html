@@ -17,34 +17,41 @@
 </head>
 <body>
     <!-- Cabecera ------------------------------------------------------>
-    <div class="container-fluid cabecera">
-        <img src="./iconos/pochoklo-logo.png" alt="Logo Marca" class="logo">
-        <h1 class="">Pochoklo</h1>
-    <!--Menu Navegacion------------------------------------------------->    
-        <nav class="barraNavegacion"> 
-            <ul type="None" class="listNav"> 
-                <li title="Inicio" class="sele listNavEle listNavEleProp"><i class="fa-solid fa-house-user iconNav"></i></li>
-                <li title="Nosotros" class="listNavEle listNavEleProp animacion"><a href="./pages/Nosotros.html"><i class="fa-solid fa-people-roof iconNav"></i></a></li>
-                <li title="Galeria" class="listNavEle listNavEleProp animacion"><a href="./pages/galeria.html"><i class="fa-solid fa-image iconNav"></i></a></li>
-                <li title="Contactanos" class="listNavEle listNavEleProp animacion"><a href="./pages/Contactos.html"><i class="fa-solid fa-envelope iconNav"></i></a></li>
-                <li title="Clases" class="listNavEle listNavEleProp animacion"><a href="./pages/clases.html"><i class="fa-solid fa-book iconNav"></i></a></li>
-                <li title="Tienda" class="listNavEle listNavEleProp animacion"><a href="./pages/Tienda.html"><i class="fa-brands fa-empire iconNav"></i></a></li>
-            </ul>
-        </nav>
+    <div class="container-fluid cabecera row">
+        <div class="col">
+            <img src="../iconos/pochoklo-logo.png" alt="Logo Marca" class="logo">
+        </div>
+        <div class="col">
+            <div class="row align-items-start">
+                <div class="col offset-2">
+                    <h1 class="">Pochoklo</h1>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col"><!--Menu Navegacion------------------------------------------------->    
+                    <nav class="barraNavegacion"> 
+                        <ul type="None" class="listNav"> 
+                            <li title="Inicio" class=" listNavEle listNavEleProp sele"><i class="fa-solid fa-house-user iconNav"></i></a></li>
+                            <li title="Nosotros" class="listNavEle listNavEleProp animacion"><a href="./pages/Nosotros.html"><i class="fa-solid fa-people-roof iconNav"></i></a></li>
+                            <li title="Galeria" class="listNavEle listNavEleProp animacion"><a href="./pages/galeria.html"><i class="fa-solid fa-image iconNav"></i></a></li>
+                            <li title="Contactanos" class="listNavEle listNavEleProp animacion"><a href="./pages/Contactos.html"><i class="fa-solid fa-envelope iconNav"></i></a></li>
+                            <li title="Clases" class="listNavEle listNavEleProp animacion"><a href="./pages/clases.html"><i class="fa-solid fa-book iconNav"></i></a></li>
+                            <li title="Tienda" class="listNavEle listNavEleProp animacion"><a href="./pages/Tienda.html"><i class="fa-brands fa-empire iconNav"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>  
     </div>
-    
 
     <!--Principal------------------------------------------------------->
     <main class="container-sm margenSuperiorPagina">
-    <!-- Ofertas ------------------------------------------------------->
-        
-        <Section class="container-md espaciado margen">
             <h2>Ofertas!</h2>
             <Article class="container-lg espaciado">
                 <div class="container-lg">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>

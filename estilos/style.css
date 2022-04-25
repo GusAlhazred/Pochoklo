@@ -71,10 +71,10 @@ article{
 
 .barraNavegacion{
         z-index: 7;
-        position: relative;
+        /* position: relative;
         top:3.5rem;
-        left: 40%;
-        transform: translate(-100%);
+        left: 40%; */
+        transform: translate(-35%);
     }
     .listNav{
         padding-inline-start:0;
@@ -272,9 +272,10 @@ article{
         border: #F9F1DD 5px solid;
         border-radius: 50px;
 }
-/* .margenSuperiorPagina{
-    margin-top: 12rem;
-} */
+.margenSuperiorPagina{
+    margin-top: 3rem;
+}
+
 .centrado{
     justify-items: center;
     align-items: center;
@@ -296,6 +297,17 @@ article{
 }
 .resaltarRedSocial{
     font-size: 2rem;
+}
+.noReSize{
+    resize: none;
+}
+.boton{
+    border: 2px solid #F9F1DD;
+    background: linear-gradient(to right top, #E0FFF2 , #c2ffe6 40%);        
+    border-radius: 50px;
+    font-weight: 200;
+    transition: 0.2;
+    
 }
 
 /*****************************************Tabla********************/
@@ -334,6 +346,15 @@ table .par{
 }
 .barraNavegacion .listNav .listNavEle:not(.sele):hover i{
     color:#f7c5f0;
+}
+.boton:hover{
+    background: radial-gradient(#5174af 60% , #BED2F4); 
+    border-color: #f7c5f0;
+    color:#f7c5f0;
+    font-weight: 900;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+
 }
 .animacion {
     transition: all 500ms;
@@ -507,6 +528,13 @@ table .par{
         /* grid-column: 1/2; */
         width: 100%;
         height: 33vh;
+    }
+    .listNavEleProp
+    {
+        width: 1rem;
+    }
+    .iconNav{ 
+        font-size: 0.8rem;
     }
 }
 
