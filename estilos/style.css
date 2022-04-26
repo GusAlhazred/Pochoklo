@@ -26,6 +26,7 @@ section{
 article{
     background-color: #FFE0FB;
     border-radius: 15px;
+    
 }
 .espaciado{
     padding: 1rem;
@@ -383,7 +384,33 @@ table .par{
     color: #25d366;    
 }
 
+.animat:hover{
+    animation-name: Ani-Logo;
+    animation-duration: 5s;
+    
+}
 
+@keyframes Ani-Logo {
+    0% {
+
+    }
+    10% {
+        transform: scaleY(0.5);
+    }    
+    15%{
+        transform: scaleY(1);
+    }
+    30%{
+        transform: rotatez(90deg);
+    }
+    60%{
+        transform: rotatez(-90deg);
+        transform: translateY(-2rem);        
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
 
 
 @media only screen /* and (min-width: 100px)*/ and (max-width: 1200px){
