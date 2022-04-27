@@ -396,15 +396,6 @@ table .par{
     }
     10% {
         transform: scaleY(0.5);
-    }    
-    15%{
-        transform: scaleY(1);
-    }
-    30%{
-        transform: rotatez(90deg);
-    }
-    60%{
-        transform: rotatez(-90deg);
         transform: translateY(-2rem);        
     }
     100%{
