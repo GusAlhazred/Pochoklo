@@ -396,7 +396,7 @@ table .par{
     }
     10% {
         transform: scaleY(0.5);
-        transform: translateY(-2rem);        
+        transform: translateY(-1.5rem);        
     }
     100%{
         transform: translateY(0rem);
