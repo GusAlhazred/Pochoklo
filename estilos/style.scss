@@ -1,30 +1,19 @@
-$clrFace:#1877f2;
-$clrInsta: #c32aa3;    
-$clrWsp: #25d366;
-$clrFocus: #5174af;
-$clrFontFocus:#f7c5f0;
-$bpXL:1200px;
-$bpMd:992px;
-$bpSm:768PX;
-$bpXS:576PX;
-$fontTitle: 'Titan One';
-
-
+@import "./variables";
 
 *{
     margin: 0;
     padding: 0;
     /* color: #85aef5; */
-    color: $clrFocus;
-    font-family: "Mali";
+    color: $clrPal3;
+    font-family: $fontSitio;
 }
 html{
     font-size: 20px;
 }
 /******************Cuerpo Colores*************************/
 body{
-    background: linear-gradient(to right, #b0e9e6 10%,  #E0FFF2  50%, #b0e9e6 90%) ;
-    background-blend-mode:luminosity;
+    background: linear-gradient(to right, $clrBody1 10%,  $clrPal1  50%, $clrBody1 90%);
+    // background-blend-mode:luminosity;
     
 }
 main{
@@ -35,22 +24,22 @@ main{
         padding: 0 1rem;
         float: left;
         font-family: $fontTitle;
-        background-color: $clrFocus;
-        color:$clrFontFocus;
+        background-color: $clrPal3;
+        color:$clrPal2;
         
-        // text-shadow: 2px 2px 5px #FFE0FB;
+        // text-shadow: 2px 2px 5px $clrArticle;
         // -webkit-text-stroke: 2px;
-        // -webkit-text-stroke-color: #FFE0FB;
+        // -webkit-text-stroke-color: $clrArticle;
     }
 }
 section{
-    background: linear-gradient(to top left, #F9F1DD, #fffdf6, #F9F1DD ) ;
+    background: linear-gradient(to top left, $clrPal4, $clrSection2, $clrPal4 ) ;
     min-height: 1vh;
     border-radius: 15px;
     
 }
 article{
-    background-color: #FFE0FB;
+    background-color: $clrArticle;
     border-radius: 15px;
     
 }
@@ -62,240 +51,49 @@ article{
     margin-bottom: 1rem;
 }
 /**************************************************************************************************************************************************************************************/
-/********************Cabecera******************************************************************************************************************************************************************/
-.cabecera{
-    position: sticky;
-    top:0%;
-    display: flex;
-    background-image: linear-gradient(to bottom, rgba(176, 233, 230, 0.95) 90%, rgba(0, 0, 0, 0));
-    backdrop-filter: blur(0.01rem);
-    font-size: 1.25rem;
-    z-index: 6;
-    .logo{
-        height: 7rem;
-        background-color: #FFE0FB;
-        border-spacing: 50%;
-        border-radius: 40%;
-        object-fit: contain;
-        box-shadow: 0 0 1rem 1rem #FFE0FB, 0 0 1rem 1rem rgba(255, 224, 251, 0.5), 0 0 1.5rem 1.5rem rgba(255, 224, 251, 0.25);
-        position: relative;
-        top:2rem;
-        left: 2rem;
-    }
-    .sitioTitulo{    
-        font-family: $fontTitle, cursive;    
-        -webkit-text-stroke: 2px;
-        -webkit-text-stroke-color: #BED2F4;
-        font-variant: small-caps;
-        color: #85aef5;
-        
-        position: relative;
-        left: 50%;
-        transform: translate(-100%);
-    }
-}
-/**************************Barras Navegacion General (Nav y Footer)*************************************************************/
-.listNavEleProp{
-    display: inline-block;
-    padding: 0.15rem;
-    height: 1rem;
-    width: 2rem;
-    list-style: none;
-    text-align: center;
-    box-sizing: content-box;
-}
-/**************************Barra Navegacion*************************************************************/
+/**************Footer + Nav + Headers***************************************/
+@import "./piesYCabeza";
 
-.barraNavegacion{
-        z-index: 7;
-        /* position: relative;
-        top:3.5rem;
-        left: 40%; */
-        transform: translate(-35%);
-    .listNav{
-        padding-inline-start:0;
-        margin: 0;
-        .listNavEle{        
-            border: 2px solid #F9F1DD;
-            background: linear-gradient(to right top, #E0FFF2 , #c2ffe6 70%);        
-            border-radius: 50px;
-            line-height: 0.6rem;
-            &:not(.sele){
-                &:hover {
-                    background: radial-gradient($clrFocus 60% , #BED2F4); 
-                    /*transition: 0.2s;*/
-                    background-position: left;
-                    transform: scale(1.1);
-                    font-weight: 900;
-                    border-color: $clrFontFocus;
-                    box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
-                    i{
-                        color:$clrFontFocus;
-                    }
-                }
-            }
-        }
-        
-        .iconNav{ 
-            color: #BED2F4;
-            font-size: 1rem;
-        }
-        .sele{
-            background: linear-gradient(to right, #f7c5f0, #FFE0FB);
-            font-weight: bold;
-            border: 2px solid #c2ffe6;
-            i{  
-                color: #c2ffe6;
-            }
-        }
-    }
-}
-
-/**************************Pie de Pagina*************************************/
-
-.pieDePagina{
-    background-color: #121720;
-    text-align: end;
-    label{
-        font-size: 0.8rem;
-        margin-right: 0.8rem;
-        margin-left: 0.2rem;
-    }
-    .listNav{
-        li{
-            margin: 0.25rem;
-            width: auto;
-        }
-        a{
-            font-size: 0.5rem;
-        }
-    }
-}
-/**************************Galeria*************************************/
+/**************************Galeria-Acordeon*************************************/
 .galeriaTitulo{
     font-size: 1.3rem;
     font-weight: 900;
-    color: #BED2F4;
+    color: $clrTituloBorde;
     mix-blend-mode: exclusion;
 }
 .accordion-buttonCrochet{
     background-position: center;
     background-size: cover;
-    background-color: #f7c5f0;
+    background-color: $clrPal2;
     /* background-image: url(../images/bikini-crochet.jpg); */
 }
 .accordion-button2Agujas{
     background-position: center;
     background-size: cover;
-    background-color: #FFE0FB;
+    background-color: $clrArticle;
     /* background-image: url(../images/remplazo.png); */
 }
 .accordion-buttonBordado{
     background-position: center;
     background-size: cover;
-    background-color: #f7c5f0;
+    background-color: $clrPal2;
     /* background-image: url(../images/llavero1.jpg); */
 }
 .accordion-buttonMacrame{
     background-position: center;
     background-size: cover;
-    background-color: #FFE0FB;
+    background-color: $clrArticle;
     /* background-image: url(../images/alas-macrame.jpg); */
 }
 .acordionBodyColor{
-    background-color: #FFE0FB;
-}
-/*****************************************Galeria********************/
-.containerGal {  
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: auto;
-    gap: 0.5rem;
-    grid-auto-flow: row;
-    
-    .fGal{
-        border: #F9F1DD 1rem solid;
-        border-radius: 50px;
-        background-position: center;
-        background-size: cover;
-    }
-    /****************Crochet***********************/
-    .fGalC1{
-        grid-column: 1/4;
-        grid-row: 1/2;
-        background-image: url(../images/bikini-crochet.jpg);
-        height: 60vh;
-    }
-    /****************2 Agujas***********************/
-    .fGal2A1{
-        grid-column: 1/3;
-        grid-row: 1/3;
-        background-image: url(../images/remplazo.png);
-        height: 55vh;
-    }
-    .fGal2A2{
-        grid-column: 3/4;
-        grid-row: 1/3;
-        background-image: url(../images/remplazo2.jpg);
-    }
-
-    /*****************Bordado********************/
-    .fGalB1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background-image: url(../images/llaveros.jpg);
-        height: 55vh;
-    }
-    .fGalB2{
-        grid-column: 2/4;
-        grid-row: 1/2;
-        background-image: url(../images/llavero1.jpg);
-    }
-
-
-    /*****************Macrame********************/
-    .fGalM1{
-        grid-column: 1/4;
-        grid-row: 1/2;
-        background-image: url(../images/alas-macrame.jpg);
-        height: 55vh;
-    }
-    .fGalM2{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        background-image: url(../images/llavero2.jpg);
-    }
-    .fGalM3{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        background-image: url(../images/macetero-Macrame.jpg);
-    }
-    .fGalM4{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        background-image: url(../images/plumas-Macrame.jpg);
-    }
-    .fGalM5{
-        grid-column: 1/3;
-        grid-row: 3/5;
-        background-image: url(../images/porta-ukelele-Macrame.jpg);
-    }
-    .fGalM6{
-        grid-column: 3/4;
-        grid-row: 3/4;
-        background-image: url(../images/atrapasuenios1.jpg);
-    }
-    .fGalM7{
-        grid-column: 3/4;
-        grid-row: 4/5;
-        background-image: url(../images/carpeta-corazon-Macrame.jpg);
-        
-    }
+    background-color: $clrArticle;
 }
 
 
 
+//////////////// Galeria ////////////////////////////////////////////////////////////
 
+@import "./gal-base";
 
 /******************Generales*************************/
 .decoImagen{
@@ -303,13 +101,13 @@ article{
     width: 15rem;
     object-fit: cover;
     margin: 10px;
-    border: #F9F1DD 20px solid;
+    border: $clrPal4 20px solid;
     border-radius: 50px;
 }
 .decoImgCaro{
         height: 50vh;
         object-fit: cover;
-        border: #F9F1DD 5px solid;
+        border: $clrPal4 5px solid;
         border-radius: 50px;
 }
 .margenSuperiorPagina{
@@ -329,7 +127,7 @@ article{
 .decoImagenFix{
     height: 12rem;
     width: 12rem;
-    border: #F9F1DD 0.5rem solid;
+    border: $clrPal4 0.5rem solid;
     border-radius: 50px;
     object-fit: cover;
     margin: 0.5rem;
@@ -342,18 +140,17 @@ article{
     resize: none;
 }
 .boton{
-    border: 2px solid #F9F1DD;
-    background: linear-gradient(to right top, #E0FFF2 , #c2ffe6 40%);        
+    border: 2px solid $clrPal4;
+    background: linear-gradient(to right top, $clrPal1 , $clrBoton1 40%);        
     border-radius: 50px;
     font-weight: 200;
     transition: 0.2;
     &:hover{
-        background: radial-gradient($clrFocus 60% , #BED2F4); 
-        border-color:$clrFontFocus;
-        color:$clrFontFocus;
+        background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
+        border-color:$clrPal2;
+        color:$clrPal2;
         font-weight: 900;
-        transform: scale(1.1);
-        box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+        box-shadow: 0px 10px 5px $clrSombra;
         transform: scale(1.1);
     }
     
@@ -365,21 +162,21 @@ article{
 /*****************************************Tabla********************/
 .tabla{
     font-weight: 900;
-    background-color: #E0FFF2;
-    border: 2px solid #E0FFF2;
+    background-color: $clrPal1;
+    border: 2px solid $clrPal1;
     width: 40%;
     .tTabla{
-        background-color:#E0FFF2;
+        background-color:$clrPal1;
     }
     .cTabla{
-        background-color:#F9F1DD;
+        background-color:$clrPal4;
         font-weight: 900;
         padding: 5px;
     }
 }
 .par{
-    border: 2px solid #BED2F4;
-    background-color: #FFE0FB;
+    border: 2px solid $clrTituloBorde;
+    background-color: $clrArticle;
 }
 
 
@@ -387,23 +184,23 @@ article{
 // .barraNavegacion {
 //     .listNav {
 //         .listNavEle:not(.sele):hover {
-//             background: radial-gradient($clrFocus 60% , #BED2F4); 
+//             background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
 //             /*transition: 0.2s;*/
 //             background-position: left;
 //             transform: scale(1.1);
 //             font-weight: 900;
-//             border-color: $clrFontFocus;
+//             border-color: $clrPal2;
 //             box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
 //             i{
-//                 color:$clrFontFocus;
+//                 color:$clrPal2;
 //             }
 //         }
 //     }
 // }
 // .boton:hover{
-//     background: radial-gradient($clrFocus 60% , #BED2F4); 
-//     border-color:$clrFontFocus;
-//     color:$clrFontFocus;
+//     background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
+//     border-color:$clrPal2;
+//     color:$clrPal2;
 //     font-weight: 900;
 //     transform: scale(1.1);
 //     box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
@@ -414,16 +211,16 @@ article{
 }
 .resaltarAnimacion:hover{
     transform: scale(1.5);   
-    border: $clrFocus 0.3rem solid;
+    border: $clrPal3 0.3rem solid;
     border-radius: 0;
-    box-shadow: 0px 0.5rem 0.25rem rgba(133, 174, 245, 0.4);
+    box-shadow: 0px 0.5rem 0.25rem $clrSombra;
 }
 .resaltarRedSocial:hover{
     transform: scale(1.3);
 }
-// .resaltarBoton:hover{
-//     transform: scale(1.1);
-// }
+.resaltarBotonGal:hover{
+    transform: scale(1.1);
+}
 .faceCol:hover{
     color: $clrFace;    
 }
@@ -453,181 +250,4 @@ article{
     }
 }
 
-
-@media only screen /* and (min-width: 100px)*/ and (max-width: $bpXL){
-    html{
-        font-size: 18px;
-    }
-    .containerGal {  
-        grid-template-columns: repeat(2, auto);
-        
-        /*****************************************Galeria********************/
-        .fGal{
-            border: #F9F1DD 10px solid;
-            border-radius: 40px;
-        }
-        /****************Crochet***********************/
-        .fGalC1{
-            grid-column: 1/3;
-            grid-row: 1/2;
-        }
-        /****************2 Agujas***********************/
-        .fGal2A1{
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-        .fGal2A2{
-            grid-column: 2/3;
-            grid-row: 1/2;
-        }
-        
-        /*****************Bordado********************/
-        
-        .fGalB2{
-            grid-column: 2/3;
-        }
-        
-        
-        /*****************Macrame********************/
-        .fGalM1{
-            grid-column: 1/3;
-            grid-row: 1/2;
-        }
-        .fGalM2{
-            grid-column: 1/2;
-            grid-row: 2/3;
-        }
-        .fGalM3{
-            grid-column: 2/3;
-            grid-row: 2/3;
-        }
-        .fGalM4{
-            grid-column: 2/3;
-            grid-row: 5/6;
-        }
-        .fGalM5{
-            grid-column: 1/3;
-            grid-row: 3/5;
-            height: 110vh;
-            width: 100%;
-        }
-        .fGalM6{
-            grid-column: 1/2;
-            grid-row: 5/7;
-            height: 650px;
-        }
-        .fGalM7{
-            grid-column: 2/3;
-            grid-row: 6/7;    
-        }
-    }
-    
-}
-
-@media only screen /* and (min-width: 100px)*/ and (max-width: $bpMd){
-    html{
-        font-size: 16px;
-    }
-    .pieDePagina{
-        label{
-        font-size: 0rem;
-        }
-    }
-    .containerGal {  
-        grid-template-columns: repeat(1, auto);
-        /*****************************************Galeria********************/
-        .fGal{
-            border: #F9F1DD 10px solid;
-            border-radius: 40px;
-            grid-column: 1/2;
-            width: 100%;
-            height: 33vh;
-        }
-        /****************Crochet***********************/
-        .fGalC1{
-            grid-row: 1/2;
-        }
-        /****************2 Agujas***********************/
-        .fGal2A1{
-            grid-row: 1/2;
-        }
-        .fGal2A2{
-            grid-column: 1/2;
-            grid-row: 2/3;
-        }
-            
-        /*****************Bordado********************/
-        .fGalB1{
-            grid-row: 1/2;
-        }
-        .fGalB2{
-            grid-row: 2/3;
-        }
-            
-            
-        /*****************Macrame********************/
-        .fGalM1{
-            grid-row: 1/2;
-        }
-        .fGalM2{
-            grid-row: 2/3;
-        }
-        .fGalM3{
-            grid-row: 3/4;
-        }
-        .fGalM4{
-            grid-row: 4/5;
-        }
-        .fGalM5{
-            grid-row: 5/6;
-        }
-        .fGalM6{
-            grid-row: 6/7;
-        }
-        .fGalM7{
-            grid-row: 7/8;    
-        }
-    }
-    
-    
-}
-
-@media only screen /* and (min-width: 100px)*/ and (max-width: $bpSm){
-    html{
-        font-size: 14px;
-    }
-    .fGal{
-        border: #F9F1DD 1rem solid;
-        border-radius: 40px;
-        /* grid-column: 1/2; */
-        width: 100%;
-        height: 33vh;
-    }
-
-    .barraNavegacion{
-        .listNav{
-            .listNavEleProp{
-                width: 1rem;
-            }
-            .iconNav{ 
-                font-size: 0.8rem;
-            }
-        }
-    }
-}
-
-@media only screen /* and (min-width: 100px)*/ and (max-width: $bpXS){
-    .fGal{
-        border: #F9F1DD 0.5rem solid;
-        border-radius: 20px;
-        width: 100%;
-        height: 33vh;
-    }
-    .barraNavegacion{
-        .listNav{
-            .listNavEle{
-                padding: 0.02rem;
-            }
-        }
-    }
-}
+@import "./query";

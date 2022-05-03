@@ -1,0 +1,109 @@
+/********************Cabecera******************************************************************************************************************************************************************/
+.cabecera{
+    position: sticky;
+    top:0%;
+    display: flex;
+    background-image: linear-gradient(to bottom, $clrCabecera 90%, rgba(0, 0, 0, 0));
+    backdrop-filter: blur(0.01rem);
+    font-size: 1.25rem;
+    z-index: 6;
+    .logo{
+        height: 7rem;
+        background-color: $clrArticle;
+        border-spacing: 50%;
+        border-radius: 40%;
+        object-fit: contain;
+        box-shadow: 0 0 1rem 1rem $clrArticle, 0 0 1rem 1rem rgba(255, 224, 251, 0.5), 0 0 1.5rem 1.5rem rgba(255, 224, 251, 0.25);
+        position: relative;
+        top:2rem;
+        left: 2rem;
+    }
+    .sitioTitulo{    
+        font-family: $fontTitle, cursive;    
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: $clrTituloBorde;
+        font-variant: small-caps;
+        color: #85aef5;
+        
+        position: relative;
+        left: 50%;
+        transform: translate(-100%);
+    }
+}
+/**************************Barras Navegacion General (Nav y Footer)*************************************************************/
+.listNavEleProp{
+    display: inline-block;
+    padding: 0.15rem;
+    height: 1rem;
+    width: 2rem;
+    list-style: none;
+    text-align: center;
+    box-sizing: content-box;
+}
+/**************************Barra Navegacion*************************************************************/
+
+.barraNavegacion{
+        z-index: 7;
+        /* position: relative;
+        top:3.5rem;
+        left: 40%; */
+        transform: translate(-35%);
+    .listNav{
+        padding-inline-start:0;
+        margin: 0;
+        .listNavEle{        
+            border: 2px solid $clrPal4;
+            background: linear-gradient(to right top, $clrPal1 , $clrBoton1 70%);        
+            border-radius: 50px;
+            line-height: 0.6rem;
+            &:not(.sele){
+                &:hover {
+                    background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
+                    /*transition: 0.2s;*/
+                    background-position: left;
+                    transform: scale(1.1);
+                    font-weight: 900;
+                    border-color: $clrPal2;
+                    box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+                    i{
+                        color:$clrPal2;
+                    }
+                }
+            }
+        }
+        
+        .iconNav{ 
+            color: $clrTituloBorde;
+            font-size: 1rem;
+        }
+        .sele{
+            background: linear-gradient(to right, $clrPal2, $clrArticle);
+            font-weight: bold;
+            border: 2px solid $clrBoton1;
+            i{  
+                color: $clrBoton1;
+            }
+        }
+    }
+}
+
+/**************************Pie de Pagina*************************************/
+
+.pieDePagina{
+    background-color: #121720;
+    text-align: end;
+    label{
+        font-size: 0.8rem;
+        margin-right: 0.8rem;
+        margin-left: 0.2rem;
+    }
+    .listNav{
+        li{
+            margin: 0.25rem;
+            width: auto;
+        }
+        a{
+            font-size: 0.5rem;
+        }
+    }
+}
