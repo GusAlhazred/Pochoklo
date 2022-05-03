@@ -181,31 +181,7 @@ article{
 
 
 /*************Animaciones & Similares**********************************************************************************************/
-// .barraNavegacion {
-//     .listNav {
-//         .listNavEle:not(.sele):hover {
-//             background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
-//             /*transition: 0.2s;*/
-//             background-position: left;
-//             transform: scale(1.1);
-//             font-weight: 900;
-//             border-color: $clrPal2;
-//             box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
-//             i{
-//                 color:$clrPal2;
-//             }
-//         }
-//     }
-// }
-// .boton:hover{
-//     background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
-//     border-color:$clrPal2;
-//     color:$clrPal2;
-//     font-weight: 900;
-//     transform: scale(1.1);
-//     box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
 
-// }
 .animacion {
     transition: all 500ms;
 }
