@@ -120,6 +120,20 @@ article{
             background: linear-gradient(to right top, #E0FFF2 , #c2ffe6 70%);        
             border-radius: 50px;
             line-height: 0.6rem;
+            &:not(.sele){
+                &:hover {
+                    background: radial-gradient($clrFocus 60% , #BED2F4); 
+                    /*transition: 0.2s;*/
+                    background-position: left;
+                    transform: scale(1.1);
+                    font-weight: 900;
+                    border-color: $clrFontFocus;
+                    box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+                    i{
+                        color:$clrFontFocus;
+                    }
+                }
+            }
         }
         
         .iconNav{ 
@@ -333,6 +347,15 @@ article{
     border-radius: 50px;
     font-weight: 200;
     transition: 0.2;
+    &:hover{
+        background: radial-gradient($clrFocus 60% , #BED2F4); 
+        border-color:$clrFontFocus;
+        color:$clrFontFocus;
+        font-weight: 900;
+        transform: scale(1.1);
+        box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+        transform: scale(1.1);
+    }
     
 }
 .input-group{
@@ -361,31 +384,31 @@ article{
 
 
 /*************Animaciones & Similares**********************************************************************************************/
-.barraNavegacion {
-    .listNav {
-        .listNavEle:not(.sele):hover {
-            background: radial-gradient($clrFocus 60% , #BED2F4); 
-            /*transition: 0.2s;*/
-            background-position: left;
-            transform: scale(1.1);
-            font-weight: 900;
-            border-color: $clrFontFocus;
-            box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
-            i{
-                color:$clrFontFocus;
-            }
-        }
-    }
-}
-.boton:hover{
-    background: radial-gradient($clrFocus 60% , #BED2F4); 
-    border-color:$clrFontFocus;
-    color:$clrFontFocus;
-    font-weight: 900;
-    transform: scale(1.1);
-    box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+// .barraNavegacion {
+//     .listNav {
+//         .listNavEle:not(.sele):hover {
+//             background: radial-gradient($clrFocus 60% , #BED2F4); 
+//             /*transition: 0.2s;*/
+//             background-position: left;
+//             transform: scale(1.1);
+//             font-weight: 900;
+//             border-color: $clrFontFocus;
+//             box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+//             i{
+//                 color:$clrFontFocus;
+//             }
+//         }
+//     }
+// }
+// .boton:hover{
+//     background: radial-gradient($clrFocus 60% , #BED2F4); 
+//     border-color:$clrFontFocus;
+//     color:$clrFontFocus;
+//     font-weight: 900;
+//     transform: scale(1.1);
+//     box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
 
-}
+// }
 .animacion {
     transition: all 500ms;
 }
@@ -398,9 +421,9 @@ article{
 .resaltarRedSocial:hover{
     transform: scale(1.3);
 }
-.resaltarBoton:hover{
-    transform: scale(1.1);
-}
+// .resaltarBoton:hover{
+//     transform: scale(1.1);
+// }
 .faceCol:hover{
     color: $clrFace;    
 }
