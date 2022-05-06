@@ -172,31 +172,31 @@ article {
 
 .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList {
   text-align: end;
-  position: relative;
-  right: 0;
+  justify-items: end;
   border: 2px solid #F9F1DD;
   border-radius: 20px;
   background: -webkit-gradient(linear, right top, left top, from(#E0FFF2), color-stop(70%, #c2ffe6));
   background: linear-gradient(to left, #E0FFF2, #c2ffe6 70%);
 }
 
-.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamEle, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele {
-  padding: 0.5rem;
-  border-radius: 10px;
-  font-weight: 700;
-}
-
-.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamEle a, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele a {
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a {
   text-decoration: none;
 }
 
-.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamEle .iconNav, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele .iconNav {
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle {
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle .iconNav {
   margin-left: 0.5rem;
   color: #BED2F4;
   font-size: 1rem;
 }
 
-.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamEle:not(.hamSele):hover, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele:not(.hamSele):hover {
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle:not(.hamSele):hover {
   background: radial-gradient(#5174af 60%, #BED2F4);
   /*transition: 0.2s;*/
   -webkit-transform: scale(1.05);
@@ -205,17 +205,18 @@ article {
   border-color: #f7c5f0;
   -webkit-box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
           box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
-}
-
-.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamEle:not(.hamSele):hover a, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele:not(.hamSele):hover a {
   color: #f7c5f0;
 }
 
-.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamEle:not(.hamSele):hover i, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele:not(.hamSele):hover i {
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle:not(.hamSele):hover i {
   color: #f7c5f0;
 }
 
 .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele {
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 100%;
   background: -webkit-gradient(linear, right top, left top, from(#f7c5f0), to(#FFE0FB));
   background: linear-gradient(to left, #f7c5f0, #FFE0FB);
   font-weight: bold;

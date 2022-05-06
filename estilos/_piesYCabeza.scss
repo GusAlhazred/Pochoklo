@@ -99,48 +99,48 @@
     .contenidoHamburguesaColapsado{
         .hamList{
             text-align: end;
-            position: relative;
-            right: 0;
+            justify-items: end;
+            // // position: relative;
+            // // right: 0;
             border: 2px solid $clrPal4;
             border-radius: 20px;
-            
             background: linear-gradient(to left, $clrPal1 , $clrBoton1 70%);
-            .hamEle{
-                // position: relative;
-                // right: 0px;
-                padding: 0.5rem;
-                border-radius: 10px;
-                font-weight: 700;
-                // width: 30%;
-
-                a{
-                    text-decoration: none;
-                }              
-                .iconNav{
-                    margin-left: 0.5rem;
-                    color: $clrTituloBorde;
-                    font-size: 1rem;
-                }
-                &:not(.hamSele){
-                    &:hover{
-                        background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
-                        /*transition: 0.2s;*/
-                        // background-position: left;
-                        transform: scale(1.05);
-                        font-weight: 900;
-                        border-color: $clrPal2;
-                        box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
-                        a{
+            a{
+                text-decoration: none;
+                .hamEle{
+                    padding: 0.5rem;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    width: 100%;
+                    ///
+                    .iconNav{
+                        margin-left: 0.5rem;
+                        color: $clrTituloBorde;
+                        font-size: 1rem;
+                    }
+                    &:not(.hamSele){
+                        &:hover{
+                            background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
+                            /*transition: 0.2s;*/
+                            // background-position: left;
+                            transform: scale(1.05);
+                            font-weight: 900;
+                            border-color: $clrPal2;
+                            box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
                             color:$clrPal2;
-                        }
-                        i{
-                            color:$clrPal2;
+                            i{
+                                color:$clrPal2;
+                            }
                         }
                     }
                 }
             }
             .hamSele{
-                @extend .hamEle;
+                padding: 0.5rem;
+                border-radius: 10px;
+                font-weight: 700;
+                width: 100%;
+                ///
                 background: linear-gradient(to left, $clrPal2, $clrArticle);
                 font-weight: bold;
                 border: 2px solid $clrBoton1;
