@@ -1,8 +1,11 @@
 //////////Variables//////////////////////
 //////////Redes//////////////////////
-$clrFace:#1877f2;
-$clrInsta: #c32aa3;    
-$clrWsp: #25d366;
+$clrRedes:(
+    face:#1877f2,
+    insta: #c32aa3,    
+    wsap: #25d366
+);
+
 //////////Paleta colores//////////////////////
 $clrPal1:#E0FFF2;
 $clrPal2:#f7c5f0;
@@ -29,11 +32,6 @@ $bpXS:576PX;
 //////////Fuentes//////////////////////
 $fontTitle: 'Titan One';
 $fontSitio: "Mali";
+$tabFontSize: 1rem;
 
-@mixin tituloDelSitio {
-    font-family: $fontTitle, cursive;    
-    -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: $clrTituloBorde;
-    font-variant: small-caps;
-    color: #85aef5;
-}
+

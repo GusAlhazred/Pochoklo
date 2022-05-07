@@ -164,6 +164,13 @@ article {
 }
 
 /**************************Nav-Hamburguesa*************************************/
+.hamEleGen, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele {
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 100%;
+}
+
 .contenedorHamburguesa {
   position: fixed;
   visibility: hidden;
@@ -181,13 +188,6 @@ article {
 
 .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a {
   text-decoration: none;
-}
-
-.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle {
-  padding: 0.5rem;
-  border-radius: 10px;
-  font-weight: 700;
-  width: 100%;
 }
 
 .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle .iconNav {
@@ -213,10 +213,6 @@ article {
 }
 
 .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele {
-  padding: 0.5rem;
-  border-radius: 10px;
-  font-weight: 700;
-  width: 100%;
   background: -webkit-gradient(linear, right top, left top, from(#f7c5f0), to(#FFE0FB));
   background: linear-gradient(to left, #f7c5f0, #FFE0FB);
   font-weight: bold;
@@ -519,7 +515,7 @@ article {
           box-sizing: border-box;
 }
 
-.resaltarRedSocial {
+.iconoRedes {
   font-size: 2rem;
 }
 
@@ -558,6 +554,7 @@ article {
   background-color: #E0FFF2;
   border: 2px solid #E0FFF2;
   width: 40%;
+  font-size: 1rem;
 }
 
 .tabla .tTabla {
@@ -590,11 +587,6 @@ article {
           box-shadow: 0px 0.5rem 0.25rem rgba(133, 174, 245, 0.4);
 }
 
-.resaltarRedSocial:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
 .resaltarBotonGal:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -602,14 +594,20 @@ article {
 
 .faceCol:hover {
   color: #1877f2;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .instaCol:hover {
   color: #c32aa3;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .wsapCol:hover {
   color: #25d366;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .animat:hover {
@@ -886,6 +884,9 @@ article {
   }
   .barraNavegacion .listNav .listNavEle, .barraNavegacion .pieDePagina .fNav .listNavEle, .pieDePagina .barraNavegacion .fNav .listNavEle {
     padding: 0.02rem;
+  }
+  .cTabla {
+    font-size: 0.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
