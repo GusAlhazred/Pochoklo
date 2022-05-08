@@ -317,6 +317,13 @@ article {
   background-color: #FFE0FB;
 }
 
+.fGal, .containerGal .fGalC1 {
+  border: #F9F1DD 1rem solid;
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+}
+
 /*****************************************Galeria********************/
 .containerGal {
   display: -ms-grid;
@@ -333,7 +340,7 @@ article {
   /*****************Macrame********************/
 }
 
-.containerGal .fGal {
+.containerGal .fGal, .containerGal .fGalC1 {
   border: #F9F1DD 1rem solid;
   border-radius: 50px;
   background-position: center;
@@ -341,13 +348,9 @@ article {
 }
 
 .containerGal .fGalC1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  background-image: url(../images/bikini-crochet.jpg);
+  grid-column: 0.25;
+  grid-row: 0.5;
+  background-image: url("../images/bikini-crochet.jpg");
   height: 60vh;
 }
 
@@ -660,7 +663,7 @@ article {
     /*****************Bordado********************/
     /*****************Macrame********************/
   }
-  .containerGal .fGal {
+  .containerGal .fGal, .containerGal .fGalC1 {
     border: #F9F1DD 10px solid;
     border-radius: 40px;
   }
@@ -770,7 +773,7 @@ article {
     /*****************Bordado********************/
     /*****************Macrame********************/
   }
-  .containerGal .fGal {
+  .containerGal .fGal, .containerGal .fGalC1 {
     border: #F9F1DD 10px solid;
     border-radius: 40px;
     -ms-grid-column: 1;
@@ -848,7 +851,7 @@ article {
   html {
     font-size: 14px;
   }
-  .fGal {
+  .fGal, .containerGal .fGalC1 {
     border: #F9F1DD 1rem solid;
     border-radius: 40px;
     /* grid-column: 1/2; */
@@ -864,7 +867,7 @@ article {
 }
 
 @media only screen and (max-width: 576PX) {
-  .fGal {
+  .fGal, .containerGal .fGalC1 {
     border: #F9F1DD 0.5rem solid;
     border-radius: 20px;
     width: 100%;

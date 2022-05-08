@@ -1,0 +1,101 @@
+.fGal{
+    border: $clrPal4 1rem solid;
+    border-radius: 50px;
+    background-position: center;
+    background-size: cover;
+}
+@mixin fGalFoto($colPri, $rowPri, $img, $height){
+    grid-column: $colPri;
+    grid-row: $rowPri;
+    background-image: url($img);
+    height: $height;
+}
+/*****************************************Galeria********************/
+.containerGal {  
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    grid-auto-flow: row;
+    
+    .fGal{
+        border: $clrPal4 1rem solid;
+        border-radius: 50px;
+        background-position: center;
+        background-size: cover;
+    }
+    /****************Crochet***********************/
+    .fGalC1{
+        // grid-column: 1/4;
+        // grid-row: 1/2;
+        // background-image: url(../images/bikini-crochet.jpg);
+        // height: 60vh;
+        @extend .fGal;
+        @include fGalFoto (1/4, 1/2, "../images/bikini-crochet.jpg", 60vh);
+    }
+    /****************2 Agujas***********************/
+    .fGal2A1{
+        grid-column: 1/3;
+        grid-row: 1/3;
+        background-image: url(../images/remplazo.png);
+        height: 55vh;
+    }
+    .fGal2A2{
+        grid-column: 3/4;
+        grid-row: 1/3;
+        background-image: url(../images/remplazo2.jpg);
+    }
+
+    /*****************Bordado********************/
+    .fGalB1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url(../images/llaveros.jpg);
+        height: 55vh;
+    }
+    .fGalB2{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        background-image: url(../images/llavero1.jpg);
+    }
+
+
+    /*****************Macrame********************/
+    .fGalM1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        background-image: url(../images/alas-macrame.jpg);
+        height: 55vh;
+    }
+    .fGalM2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url(../images/llavero2.jpg);
+    }
+    .fGalM3{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url(../images/macetero-Macrame.jpg);
+    }
+    .fGalM4{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-image: url(../images/plumas-Macrame.jpg);
+    }
+    .fGalM5{
+        grid-column: 1/3;
+        grid-row: 3/5;
+        background-image: url(../images/porta-ukelele-Macrame.jpg);
+    }
+    .fGalM6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        background-image: url(../images/atrapasuenios1.jpg);
+    }
+    .fGalM7{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        background-image: url(../images/carpeta-corazon-Macrame.jpg);
+        
+    }
+}
