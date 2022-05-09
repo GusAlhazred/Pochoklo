@@ -1,4 +1,30 @@
+/**************************Barras Navegacion General (Nav y Footer)*************************************************************/
+.listNavEleProp{
+    display: inline-block;
+    padding: 0.15rem;
+    height: 1rem;
+    width: 2rem;
+    list-style: none;
+    text-align: center;
+    box-sizing: content-box;
+}
+.listNavEle{ 
+    border: 2px solid $clrPal4;
+    background: linear-gradient(to right top, $clrPal1 , $clrBoton1 70%);        
+    border-radius: 50px;
+    line-height: 0.6rem;
+}
+
+
 /********************Cabecera******************************************************************************************************************************************************************/
+@mixin tituloDelSitio {
+    font-family: $fontTitle, cursive;    
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: $clrTituloBorde;
+    font-variant: small-caps;
+    color: #85aef5;
+}
+
 .cabecera{
     position: sticky;
     top:0%;
@@ -19,43 +45,23 @@
         left: 2rem;
     }
     .sitioTitulo{    
-        font-family: $fontTitle, cursive;    
-        -webkit-text-stroke: 2px;
-        -webkit-text-stroke-color: $clrTituloBorde;
-        font-variant: small-caps;
-        color: #85aef5;
-        
+        @include tituloDelSitio;    
         position: relative;
         left: 50%;
         transform: translate(-100%);
     }
 }
-/**************************Barras Navegacion General (Nav y Footer)*************************************************************/
-.listNavEleProp{
-    display: inline-block;
-    padding: 0.15rem;
-    height: 1rem;
-    width: 2rem;
-    list-style: none;
-    text-align: center;
-    box-sizing: content-box;
-}
+
 /**************************Barra Navegacion*************************************************************/
 
 .barraNavegacion{
         z-index: 7;
-        /* position: relative;
-        top:3.5rem;
-        left: 40%; */
         transform: translate(-35%);
     .listNav{
         padding-inline-start:0;
         margin: 0;
-        .listNavEle{        
-            border: 2px solid $clrPal4;
-            background: linear-gradient(to right top, $clrPal1 , $clrBoton1 70%);        
-            border-radius: 50px;
-            line-height: 0.6rem;
+        .listNavEle{ 
+            @extend .listNavEleProp;
             &:not(.sele){
                 &:hover {
                     background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
@@ -87,6 +93,90 @@
     }
 }
 
+/**************************Nav-Hamburguesa*************************************/
+.hamEleGen{
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 100%;
+    .iconNav{
+        margin-left: 0.5rem;
+        color: $clrTituloBorde;
+        font-size: 1rem;
+    }
+}
+.contenedorHamburguesa{
+    position: fixed;
+    visibility: hidden;
+    z-index: -10;
+    .contenidoHamburguesaColapsado{
+        .hamList{
+            text-align: end;
+            justify-items: end;
+            border: 2px solid $clrPal4;
+            border-radius: 20px;
+            background: linear-gradient(to left, $clrPal1 , $clrBoton1 70%);
+            a{
+                text-decoration: none;
+                .hamEle{
+                    @extend .hamEleGen;
+                    ///
+                    
+                    &:not(.hamSele){
+                        &:hover{
+                            background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
+                            transform: scale(1.05);
+                            font-weight: 900;
+                            border-color: $clrPal2;
+                            box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+                            color:$clrPal2;
+                            i{
+                                color:$clrPal2;
+                            }
+                        }
+                    }
+                }
+            }
+            .hamSele{
+                @extend .hamEleGen;
+                ///
+                background: linear-gradient(to left, $clrPal2, $clrArticle);
+                font-weight: bold;
+                border: 2px solid $clrBoton1;
+                color: $clrBoton1;
+                .iconNav{  
+                    color: $clrBoton1;
+                }
+            }
+        }
+    }
+    .BarraHamburguesa{
+        .sitioTituloHam{
+            @include tituloDelSitio;
+        }
+        .logoHam{
+            width: 3rem;
+        }
+    }
+    
+}
+.bg-personal{
+    background-color: $clrCabecera;
+    color: $clrPal3;
+    width: 100%;
+}
+
+.editHamburguesa{
+    display: flex;
+    flex-direction: column;
+}
+.Logo-Marca-Hamburguesa{
+    width: 3rem;
+}
+
+
+
+
 /**************************Pie de Pagina*************************************/
 
 .pieDePagina{
@@ -97,8 +187,10 @@
         margin-right: 0.8rem;
         margin-left: 0.2rem;
     }
-    .listNav{
-        li{
+    .fNav{
+        @extend .listNav;
+        .fEle{
+            @extend .listNavEleProp;
             margin: 0.25rem;
             width: auto;
         }

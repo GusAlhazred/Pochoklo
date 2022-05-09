@@ -53,6 +53,26 @@ article {
 
 /**************************************************************************************************************************************************************************************/
 /**************Footer + Nav + Headers***************************************/
+/**************************Barras Navegacion General (Nav y Footer)*************************************************************/
+.listNavEleProp, .barraNavegacion .listNav .listNavEle, .barraNavegacion .pieDePagina .fNav .listNavEle, .pieDePagina .barraNavegacion .fNav .listNavEle, .pieDePagina .fNav .fEle {
+  display: inline-block;
+  padding: 0.15rem;
+  height: 1rem;
+  width: 2rem;
+  list-style: none;
+  text-align: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.listNavEle {
+  border: 2px solid #F9F1DD;
+  background: -webkit-gradient(linear, left bottom, right top, from(#E0FFF2), color-stop(70%, #c2ffe6));
+  background: linear-gradient(to right top, #E0FFF2, #c2ffe6 70%);
+  border-radius: 50px;
+  line-height: 0.6rem;
+}
+
 /********************Cabecera******************************************************************************************************************************************************************/
 .cabecera {
   position: -webkit-sticky;
@@ -95,18 +115,6 @@ article {
           transform: translate(-100%);
 }
 
-/**************************Barras Navegacion General (Nav y Footer)*************************************************************/
-.listNavEleProp {
-  display: inline-block;
-  padding: 0.15rem;
-  height: 1rem;
-  width: 2rem;
-  list-style: none;
-  text-align: center;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
 /**************************Barra Navegacion*************************************************************/
 .barraNavegacion {
   z-index: 7;
@@ -117,21 +125,13 @@ article {
           transform: translate(-35%);
 }
 
-.barraNavegacion .listNav {
+.barraNavegacion .listNav, .barraNavegacion .pieDePagina .fNav, .pieDePagina .barraNavegacion .fNav {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
   margin: 0;
 }
 
-.barraNavegacion .listNav .listNavEle {
-  border: 2px solid #F9F1DD;
-  background: -webkit-gradient(linear, left bottom, right top, from(#E0FFF2), color-stop(70%, #c2ffe6));
-  background: linear-gradient(to right top, #E0FFF2, #c2ffe6 70%);
-  border-radius: 50px;
-  line-height: 0.6rem;
-}
-
-.barraNavegacion .listNav .listNavEle:not(.sele):hover {
+.barraNavegacion .listNav .listNavEle:not(.sele):hover, .barraNavegacion .pieDePagina .fNav .listNavEle:not(.sele):hover, .pieDePagina .barraNavegacion .fNav .listNavEle:not(.sele):hover {
   background: radial-gradient(#5174af 60%, #BED2F4);
   /*transition: 0.2s;*/
   background-position: left;
@@ -143,24 +143,117 @@ article {
           box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
 }
 
-.barraNavegacion .listNav .listNavEle:not(.sele):hover i {
+.barraNavegacion .listNav .listNavEle:not(.sele):hover i, .barraNavegacion .pieDePagina .fNav .listNavEle:not(.sele):hover i, .pieDePagina .barraNavegacion .fNav .listNavEle:not(.sele):hover i {
   color: #f7c5f0;
 }
 
-.barraNavegacion .listNav .iconNav {
+.barraNavegacion .listNav .iconNav, .barraNavegacion .pieDePagina .fNav .iconNav, .pieDePagina .barraNavegacion .fNav .iconNav {
   color: #BED2F4;
   font-size: 1rem;
 }
 
-.barraNavegacion .listNav .sele {
+.barraNavegacion .listNav .sele, .barraNavegacion .pieDePagina .fNav .sele, .pieDePagina .barraNavegacion .fNav .sele {
   background: -webkit-gradient(linear, left top, right top, from(#f7c5f0), to(#FFE0FB));
   background: linear-gradient(to right, #f7c5f0, #FFE0FB);
   font-weight: bold;
   border: 2px solid #c2ffe6;
 }
 
-.barraNavegacion .listNav .sele i {
+.barraNavegacion .listNav .sele i, .barraNavegacion .pieDePagina .fNav .sele i, .pieDePagina .barraNavegacion .fNav .sele i {
   color: #c2ffe6;
+}
+
+/**************************Nav-Hamburguesa*************************************/
+.hamEleGen, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele {
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.hamEleGen .iconNav, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle .iconNav, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele .iconNav {
+  margin-left: 0.5rem;
+  color: #BED2F4;
+  font-size: 1rem;
+}
+
+.contenedorHamburguesa {
+  position: fixed;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList {
+  text-align: end;
+  justify-items: end;
+  border: 2px solid #F9F1DD;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, right top, left top, from(#E0FFF2), color-stop(70%, #c2ffe6));
+  background: linear-gradient(to left, #E0FFF2, #c2ffe6 70%);
+}
+
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a {
+  text-decoration: none;
+}
+
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle:not(.hamSele):hover {
+  background: radial-gradient(#5174af 60%, #BED2F4);
+  /*transition: 0.2s;*/
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  font-weight: 900;
+  border-color: #f7c5f0;
+  -webkit-box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+          box-shadow: 0px 10px 5px rgba(133, 174, 245, 0.2);
+  color: #f7c5f0;
+}
+
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle:not(.hamSele):hover i {
+  color: #f7c5f0;
+}
+
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele {
+  background: -webkit-gradient(linear, right top, left top, from(#f7c5f0), to(#FFE0FB));
+  background: linear-gradient(to left, #f7c5f0, #FFE0FB);
+  font-weight: bold;
+  border: 2px solid #c2ffe6;
+  color: #c2ffe6;
+}
+
+.contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele .iconNav {
+  color: #c2ffe6;
+}
+
+.contenedorHamburguesa .BarraHamburguesa .sitioTituloHam {
+  font-family: "Titan One", cursive;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #BED2F4;
+  font-variant: small-caps;
+  color: #85aef5;
+}
+
+.contenedorHamburguesa .BarraHamburguesa .logoHam {
+  width: 3rem;
+}
+
+.bg-personal {
+  background-color: rgba(176, 233, 230, 0.95);
+  color: #5174af;
+  width: 100%;
+}
+
+.editHamburguesa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Logo-Marca-Hamburguesa {
+  width: 3rem;
 }
 
 /**************************Pie de Pagina*************************************/
@@ -175,12 +268,12 @@ article {
   margin-left: 0.2rem;
 }
 
-.pieDePagina .listNav li {
+.pieDePagina .fNav .fEle {
   margin: 0.25rem;
   width: auto;
 }
 
-.pieDePagina .listNav a {
+.pieDePagina .fNav a {
   font-size: 0.5rem;
 }
 
@@ -224,6 +317,13 @@ article {
   background-color: #FFE0FB;
 }
 
+.fGal, .containerGal .fGalC1, .containerGal .fGal2A1 {
+  border: #F9F1DD 1rem solid;
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+}
+
 /*****************************************Galeria********************/
 .containerGal {
   display: -ms-grid;
@@ -240,13 +340,6 @@ article {
   /*****************Macrame********************/
 }
 
-.containerGal .fGal {
-  border: #F9F1DD 1rem solid;
-  border-radius: 50px;
-  background-position: center;
-  background-size: cover;
-}
-
 .containerGal .fGalC1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -254,7 +347,7 @@ article {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  background-image: url(../images/bikini-crochet.jpg);
+  background-image: url("../images/bikini-crochet.jpg");
   height: 60vh;
 }
 
@@ -265,7 +358,7 @@ article {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
-  background-image: url(../images/remplazo.png);
+  background-image: url("../images/remplazo.jpg");
   height: 55vh;
 }
 
@@ -276,7 +369,8 @@ article {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
-  background-image: url(../images/remplazo2.jpg);
+  background-image: url("../images/remplazo2.jpg");
+  height: 55vh;
 }
 
 .containerGal .fGalB1 {
@@ -286,7 +380,7 @@ article {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  background-image: url(../images/llaveros.jpg);
+  background-image: url("../images/llaveros.jpg");
   height: 55vh;
 }
 
@@ -307,7 +401,7 @@ article {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  background-image: url(../images/alas-macrame.jpg);
+  background-image: url("../images/alas-macrame.jpg");
   height: 55vh;
 }
 
@@ -422,7 +516,7 @@ article {
           box-sizing: border-box;
 }
 
-.resaltarRedSocial {
+.iconoRedes {
   font-size: 2rem;
 }
 
@@ -461,6 +555,7 @@ article {
   background-color: #E0FFF2;
   border: 2px solid #E0FFF2;
   width: 40%;
+  font-size: 1rem;
 }
 
 .tabla .tTabla {
@@ -493,11 +588,6 @@ article {
           box-shadow: 0px 0.5rem 0.25rem rgba(133, 174, 245, 0.4);
 }
 
-.resaltarRedSocial:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
 .resaltarBotonGal:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -505,14 +595,20 @@ article {
 
 .faceCol:hover {
   color: #1877f2;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .instaCol:hover {
   color: #c32aa3;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .wsapCol:hover {
   color: #25d366;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .animat:hover {
@@ -565,7 +661,7 @@ article {
     /*****************Bordado********************/
     /*****************Macrame********************/
   }
-  .containerGal .fGal {
+  .containerGal .fGal, .containerGal .fGalC1, .containerGal .fGal2A1 {
     border: #F9F1DD 10px solid;
     border-radius: 40px;
   }
@@ -675,7 +771,7 @@ article {
     /*****************Bordado********************/
     /*****************Macrame********************/
   }
-  .containerGal .fGal {
+  .containerGal .fGal, .containerGal .fGalC1, .containerGal .fGal2A1 {
     border: #F9F1DD 10px solid;
     border-radius: 40px;
     -ms-grid-column: 1;
@@ -753,30 +849,45 @@ article {
   html {
     font-size: 14px;
   }
-  .fGal {
+  .fGal, .containerGal .fGalC1, .containerGal .fGal2A1 {
     border: #F9F1DD 1rem solid;
     border-radius: 40px;
     /* grid-column: 1/2; */
     width: 100%;
     height: 33vh;
   }
-  .barraNavegacion .listNav .listNavEleProp {
+  .barraNavegacion .listNav .listNavEleProp, .barraNavegacion .pieDePagina .fNav .listNavEleProp, .pieDePagina .barraNavegacion .fNav .listNavEleProp, .barraNavegacion .listNav .listNavEle, .barraNavegacion .pieDePagina .fNav .listNavEle, .pieDePagina .barraNavegacion .fNav .listNavEle, .pieDePagina .fNav .barraNavegacion .listNav .fEle, .barraNavegacion .pieDePagina .fNav .fEle, .pieDePagina .barraNavegacion .fNav .fEle {
     width: 1rem;
   }
-  .barraNavegacion .listNav .iconNav {
+  .barraNavegacion .listNav .iconNav, .barraNavegacion .pieDePagina .fNav .iconNav, .pieDePagina .barraNavegacion .fNav .iconNav {
     font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 576PX) {
-  .fGal {
+  .fGal, .containerGal .fGalC1, .containerGal .fGal2A1 {
     border: #F9F1DD 0.5rem solid;
     border-radius: 20px;
     width: 100%;
     height: 33vh;
   }
-  .barraNavegacion .listNav .listNavEle {
+  .cabecera {
+    position: fixed;
+    visibility: hidden;
+    z-index: -10;
+  }
+  .contenedorHamburguesa {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    visibility: visible;
+    z-index: 6;
+  }
+  .barraNavegacion .listNav .listNavEle, .barraNavegacion .pieDePagina .fNav .listNavEle, .pieDePagina .barraNavegacion .fNav .listNavEle {
     padding: 0.02rem;
   }
+  .cTabla {
+    font-size: 0.7rem;
+  }
 }
-/*# sourceMappingURL=Style.css.map */
+/*# sourceMappingURL=style.css.map */
