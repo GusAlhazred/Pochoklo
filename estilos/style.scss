@@ -8,7 +8,7 @@
     font-family: $fontSitio;
 }
 html{
-    font-size: 20px;
+    font-size: map-get($remSize , st);
 }
 /******************Cuerpo Colores*************************/
 body{
