@@ -10,6 +10,15 @@ html {
   font-size: 20px;
 }
 
+.espaciado {
+  padding: 1rem;
+}
+
+.margen {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /******************Cuerpo Colores*************************/
 body {
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #b0e9e6), color-stop(50%, #E0FFF2), color-stop(90%, #b0e9e6));
@@ -30,25 +39,28 @@ main p::first-letter {
   color: #f7c5f0;
 }
 
+main h2 {
+  font-weight: 900;
+  text-shadow: 0 0.2rem 1rem rgba(133, 174, 245, 0.4);
+  text-transform: capitalize;
+}
+
+main h3 {
+  font-weight: 700;
+}
+
 section {
   background: -webkit-gradient(linear, right bottom, left top, from(#F9F1DD), color-stop(#fffdf6), to(#F9F1DD));
   background: linear-gradient(to top left, #F9F1DD, #fffdf6, #F9F1DD);
-  min-height: 1vh;
+  min-height: 10vh;
   border-radius: 15px;
+  -webkit-box-shadow: 0.4rem 0.4rem 3px rgba(133, 174, 245, 0.4);
+          box-shadow: 0.4rem 0.4rem 3px rgba(133, 174, 245, 0.4);
 }
 
 article {
   background-color: #FFE0FB;
   border-radius: 15px;
-}
-
-.espaciado {
-  padding: 1rem;
-}
-
-.margen {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 /**************************************************************************************************************************************************************************************/
@@ -91,13 +103,10 @@ article {
 
 .cabecera .logo {
   height: 7rem;
-  background-color: #FFE0FB;
   border-spacing: 50%;
   border-radius: 40%;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-box-shadow: 0 0 1rem 1rem #FFE0FB, 0 0 1rem 1rem rgba(255, 224, 251, 0.5), 0 0 1.5rem 1.5rem rgba(255, 224, 251, 0.25);
-          box-shadow: 0 0 1rem 1rem #FFE0FB, 0 0 1rem 1rem rgba(255, 224, 251, 0.5), 0 0 1.5rem 1.5rem rgba(255, 224, 251, 0.25);
   position: relative;
   top: 2rem;
   left: 2rem;
@@ -277,8 +286,6 @@ article {
 .galeriaTitulo {
   font-size: 1.3rem;
   font-weight: 900;
-  color: #BED2F4;
-  mix-blend-mode: exclusion;
 }
 
 .accordion-buttonCrochet {
@@ -475,7 +482,7 @@ article {
   -o-object-fit: cover;
      object-fit: cover;
   margin: 10px;
-  border: #F9F1DD 20px solid;
+  border: #F9F1DD 1rem solid;
   border-radius: 50px;
 }
 
@@ -600,39 +607,40 @@ article {
   color: #1877f2;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+  text-shadow: 0.2rem 0.2rem 3px rgba(133, 174, 245, 0.4);
 }
 
 .instaCol:hover {
   color: #c32aa3;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+  text-shadow: 0.2rem 0.2rem 3px rgba(133, 174, 245, 0.4);
 }
 
 .wsapCol:hover {
   color: #25d366;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+  text-shadow: 0.2rem 0.2rem 3px rgba(133, 174, 245, 0.4);
 }
 
 .animat:hover {
   -webkit-animation-name: Ani-Logo;
           animation-name: Ani-Logo;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes Ani-Logo {
   0% {
   }
   10% {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
-    -webkit-transform: translateY(-1.5rem);
-            transform: translateY(-1.5rem);
+    -webkit-transform: translateY(-1.5rem) rotatez(36deg) scale(0.5);
+            transform: translateY(-1.5rem) rotatez(36deg) scale(0.5);
   }
   100% {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+    -webkit-transform: translateY(0rem) rotatez(360deg) scale(1);
+            transform: translateY(0rem) rotatez(360deg) scale(1);
   }
 }
 
@@ -640,14 +648,12 @@ article {
   0% {
   }
   10% {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
-    -webkit-transform: translateY(-1.5rem);
-            transform: translateY(-1.5rem);
+    -webkit-transform: translateY(-1.5rem) rotatez(36deg) scale(0.5);
+            transform: translateY(-1.5rem) rotatez(36deg) scale(0.5);
   }
   100% {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+    -webkit-transform: translateY(0rem) rotatez(360deg) scale(1);
+            transform: translateY(0rem) rotatez(360deg) scale(1);
   }
 }
 
@@ -746,7 +752,7 @@ article {
     -ms-grid-row: 5;
     -ms-grid-row-span: 2;
     grid-row: 5/7;
-    height: 650px;
+    height: 100%;
   }
   .containerGal .fGalM7 {
     -ms-grid-column: 2;

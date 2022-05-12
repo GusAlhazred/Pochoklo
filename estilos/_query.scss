@@ -6,6 +6,7 @@
     .containerGal {  
         grid-template-columns: repeat(2, auto);
         
+        
         /*****************************************Galeria********************/
         .fGal{
             border: $clrPal4 10px solid;
@@ -59,7 +60,7 @@
         .fGalM6{
             grid-column: 1/2;
             grid-row: 5/7;
-            height: 650px;
+            height: 100%;
         }
         .fGalM7{
             grid-column: 2/3;
@@ -80,6 +81,7 @@
     }
     .containerGal {  
         grid-template-columns: repeat(1, auto);
+
         /*****************************************Galeria********************/
         .fGal{
             border: $clrPal4 10px solid;

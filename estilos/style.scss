@@ -9,7 +9,17 @@
 }
 html{
     font-size: map-get($remSize , st);
+    
 }
+
+.espaciado{
+    padding: 1rem;
+}
+.margen{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 /******************Cuerpo Colores*************************/
 body{
     background: linear-gradient(to right, $clrBody1 10%,  $clrPal1  50%, $clrBody1 90%);
@@ -18,6 +28,7 @@ body{
 }
 main{
     min-height: calc(100vh - 16rem);
+    
     p::first-letter{
         margin: 0 0.5rem;
         font-size: 2rem;
@@ -26,16 +37,22 @@ main{
         font-family: $fontTitle;
         background-color: $clrPal3;
         color:$clrPal2;
-        
-        // text-shadow: 2px 2px 5px $clrArticle;
-        // -webkit-text-stroke: 2px;
-        // -webkit-text-stroke-color: $clrArticle;
+    }
+    h2{
+        font-weight: 900;
+        text-shadow: 0 0.2rem 1rem $clrSombra;
+        text-transform: capitalize;
+    }
+    h3{
+        font-weight: 700;
     }
 }
 section{
     background: linear-gradient(to top left, $clrPal4, $clrSection2, $clrPal4 ) ;
-    min-height: 1vh;
+    min-height: 10vh;
     border-radius: 15px;
+    box-shadow: 0.4rem 0.4rem 3px $clrSombra ;
+
     
 }
 article{
@@ -43,13 +60,7 @@ article{
     border-radius: 15px;
     
 }
-.espaciado{
-    padding: 1rem;
-}
-.margen{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
+
 /**************************************************************************************************************************************************************************************/
 /**************Footer + Nav + Headers***************************************/
 @import "./piesYCabeza";
@@ -58,8 +69,8 @@ article{
 .galeriaTitulo{
     font-size: 1.3rem;
     font-weight: 900;
-    color: $clrTituloBorde;
-    mix-blend-mode: exclusion;
+    // color: $clrTituloBorde;
+    // mix-blend-mode: exclusion;
 }
 .accordion-buttonCrochet{
     background-position: center;
@@ -101,7 +112,7 @@ article{
     width: 15rem;
     object-fit: cover;
     margin: 10px;
-    border: $clrPal4 20px solid;
+    border: $clrPal4 1rem solid;
     border-radius: 50px;
 }
 .decoImgCaro{
@@ -166,6 +177,7 @@ article{
     border: 2px solid $clrPal1;
     width: 40%;
     font-size: $tabFontSize;
+    
     .tTabla{
         background-color:$clrPal1;
         
@@ -202,12 +214,13 @@ article{
     .#{$red}Col:hover{
         color:$color;
         transform: scale(1.3);
+        text-shadow: 0.2rem 0.2rem 3px $clrSombra;
     }
 }
 
 .animat:hover{
     animation-name: Ani-Logo;
-    animation-duration: 5s;
+    animation-duration: 4s;
     
 }
 
@@ -216,11 +229,13 @@ article{
 
     }
     10% {
-        transform: scaleY(0.5);
-        transform: translateY(-1.5rem);        
+        // transform: scaleY(0.5);
+        // transform: ;   
+        transform: translateY(-1.5rem)  rotatez(36deg) scale(0.5);     
     }
     100%{
-        transform: translateY(0rem);
+        // transform: ;
+        transform:translateY(0rem) rotatez(360deg) scale(1);
     }
 }
 

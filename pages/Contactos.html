@@ -34,7 +34,9 @@
     <!-- Cabecera ------------------------------------------------------>
     <div class="container-fluid cabecera row">
         <div class="col">
-            <img src="../iconos/pochoklo-logo.svg" alt="Logo Marca" class="logo">
+            <a href="../index.html">
+                <img src="../iconos/pochoklo-logo.svg" alt="Logo Marca" class="logo ">
+            </a>
         </div>
         <div class="col">
             <div class="row align-items-start">
@@ -76,7 +78,9 @@
         </div>
         <div class="navbar navbar-dark bg-personal BarraHamburguesa">
             <div class=" container-fluid ">
-                <img src="../iconos/pochoklo-logo.svg" alt="logo Marca" class="logoHam">
+                <a href="../index.html">
+                    <img src="../iconos/pochoklo-logo.svg" alt="logo Marca" class="logoHam">
+                </a>
                 <h2 class="sitioTituloHam">Pochoklo</h2>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -106,7 +110,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-floating mb-3 has-validation">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                                    <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com" required>
                                     <label for="floatingInput">Nombre</label>
                                 </div>
                             </div>
@@ -115,7 +119,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                                    <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com" required>
                                     <label for="floatingInput">eMail</label>
                                 </div>
                             </div>
@@ -172,50 +176,51 @@
                     <!-- tabla -->
                     <div class="row  gy-2">
                         <h2>Checkea los horarios de nuestras clases!</h2>
-                        <Article class=" espaciado ">
+                        <Article class="">
                             <div class="row ">
                             <!------------------- Tabla horarios---------------------------------------------------- -->
-                                <div class="col-lg-6">
-                                    
-                                    <table class="tabla">
-                                        <caption class="tTabla">Dias disponibles</caption> <!--Titulo Tabla-->
-                                        <tr>
-                                            <th class="cTabla"><label for="">Horarios</label></th>
-                                            <th class="cTabla"><label for="">Viernes</label></th>
-                                            <th class="cTabla"><label for="">Sabado</label></th>
-                                            <th class="cTabla"><label for="">Domingo</label></th>
-                                        </tr>
-                                        <tr class="par">
-                                            <td><label for="">15hs</label></td>
-                                            <td><input type="checkbox" disabled="disabled"></td>
-                                            <td><input type="checkbox" checked disabled="disabled"></td>
-                                            <td><input type="checkbox"  disabled="disabled"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">16hs</label></td>
-                                            <td><input type="checkbox" disabled="disabled" checked></td>
-                                            <td><input type="checkbox" disabled="disabled" ></td>
-                                            <td><input type="checkbox"  disabled="disabled"checked></td>
-                                        </tr>
-                                        <tr class="par">
-                                            <td><label for="">17hs</label></td>
-                                            <td><input type="checkbox" disabled="disabled" ></td>
-                                            <td><input type="checkbox" disabled="disabled" checked></td>
-                                            <td><input type="checkbox" disabled="disabled" ></td>
-                                        </tr>
-                                        <tr>
-                                            <td><label for="">18hs</label></td>
-                                            <td><input type="checkbox" disabled="disabled"></td>
-                                            <td><input type="checkbox" disabled="disabled" checked></td>
-                                            <td><input type="checkbox" disabled="disabled" checked></td>
-                                        </tr>
-                                        <tr class="par">
-                                            <td><label for="">19hs</label></td>
-                                            <td><input type="checkbox" disabled="disabled" checked></td>
-                                            <td><input type="checkbox" disabled="disabled" ></td>
-                                            <td><input type="checkbox" disabled="disabled" ></td>
-                                        </tr>
-                                    </table>
+                                <div class="col">
+                                    <div class="d-flex justify-content-center mt-3 mb-3">
+                                        <table class="tabla ">
+                                            <caption class="tTabla">Dias disponibles</caption> <!--Titulo Tabla-->
+                                            <tr>
+                                                <th class="cTabla"><label for="">Horarios</label></th>
+                                                <th class="cTabla"><label for="">Viernes</label></th>
+                                                <th class="cTabla"><label for="">Sabado</label></th>
+                                                <th class="cTabla"><label for="">Domingo</label></th>
+                                            </tr>
+                                            <tr class="par">
+                                                <td><label for="">15hs</label></td>
+                                                <td><input type="checkbox" disabled="disabled"></td>
+                                                <td><input type="checkbox" checked disabled="disabled"></td>
+                                                <td><input type="checkbox"  disabled="disabled"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="">16hs</label></td>
+                                                <td><input type="checkbox" disabled="disabled" checked></td>
+                                                <td><input type="checkbox" disabled="disabled" ></td>
+                                                <td><input type="checkbox"  disabled="disabled"checked></td>
+                                            </tr>
+                                            <tr class="par">
+                                                <td><label for="">17hs</label></td>
+                                                <td><input type="checkbox" disabled="disabled" ></td>
+                                                <td><input type="checkbox" disabled="disabled" checked></td>
+                                                <td><input type="checkbox" disabled="disabled" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="">18hs</label></td>
+                                                <td><input type="checkbox" disabled="disabled"></td>
+                                                <td><input type="checkbox" disabled="disabled" checked></td>
+                                                <td><input type="checkbox" disabled="disabled" checked></td>
+                                            </tr>
+                                            <tr class="par">
+                                                <td><label for="">19hs</label></td>
+                                                <td><input type="checkbox" disabled="disabled" checked></td>
+                                                <td><input type="checkbox" disabled="disabled" ></td>
+                                                <td><input type="checkbox" disabled="disabled" ></td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>                    
                         </article>
                     </div>
