@@ -14,6 +14,8 @@ $remSize:(
 );
 
 
+
+
 //////////Paleta colores//////////////////////
 $clrPal1:#E0FFF2;
 $clrPal2:#f7c5f0;
@@ -31,6 +33,15 @@ $clrTituloBorde:#BED2F4;
 $clrSombra:rgba(133, 174, 245, 0.4);
 
 
+//////////Colores-Tejidos////////////////////////////////////
+
+$tejidos:(
+    Crochet: $clrPal2,
+    2Agujas: $clrArticle,
+    Bordado: $clrPal2,
+    Macrame: $clrArticle,
+);
+
 //////////Breakpoints//////////////////////
 $bpXL:1200px;
 $bpMd:992px;
@@ -43,3 +54,4 @@ $fontSitio: "Mali";
 $tabFontSize: 1rem;
 
 
+    

@@ -72,33 +72,46 @@ article{
     // color: $clrTituloBorde;
     // mix-blend-mode: exclusion;
 }
-.accordion-buttonCrochet{
-    background-position: center;
-    background-size: cover;
-    background-color: $clrPal2;
-    /* background-image: url(../images/bikini-crochet.jpg); */
-}
-.accordion-button2Agujas{
-    background-position: center;
-    background-size: cover;
-    background-color: $clrArticle;
-    /* background-image: url(../images/remplazo.png); */
-}
-.accordion-buttonBordado{
-    background-position: center;
-    background-size: cover;
-    background-color: $clrPal2;
-    /* background-image: url(../images/llavero1.jpg); */
-}
-.accordion-buttonMacrame{
-    background-position: center;
-    background-size: cover;
-    background-color: $clrArticle;
-    /* background-image: url(../images/alas-macrame.jpg); */
-}
 .acordionBodyColor{
     background-color: $clrArticle;
 }
+
+@mixin confAccordeon ($colAco){
+    background-color: $colAco;
+}
+
+@each $tipo, $colAco in $tejidos{
+    .accordion-button#{$tipo}{
+        @include confAccordeon ($colAco)
+    }
+}
+
+
+// .accordion-buttonCrochet{
+//     background-position: center;
+//     background-size: cover;
+//     background-color: $clrPal2;
+//     /* background-image: url(../images/bikini-crochet.jpg); */
+// }
+// .accordion-button2Agujas{
+//     background-position: center;
+//     background-size: cover;
+//     background-color: $clrArticle;
+//     /* background-image: url(../images/remplazo.png); */
+// }
+// .accordion-buttonBordado{
+//     background-position: center;
+//     background-size: cover;
+//     background-color: $clrPal2;
+//     /* background-image: url(../images/llavero1.jpg); */
+// }
+// .accordion-buttonMacrame{
+//     background-position: center;
+//     background-size: cover;
+//     background-color: $clrArticle;
+//     /* background-image: url(../images/alas-macrame.jpg); */
+// }
+
 
 
 
