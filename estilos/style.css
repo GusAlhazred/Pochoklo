@@ -10,15 +10,6 @@ html {
   font-size: 20px;
 }
 
-.espaciado {
-  padding: 1rem;
-}
-
-.margen {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 /******************Cuerpo Colores*************************/
 body {
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #b0e9e6), color-stop(50%, #E0FFF2), color-stop(90%, #b0e9e6));
@@ -474,7 +465,7 @@ article {
   border-radius: 50px;
 }
 
-.decoImgCaro {
+.decoImgCarousel {
   height: 50vh;
   -o-object-fit: cover;
      object-fit: cover;
@@ -486,20 +477,13 @@ article {
   margin-top: 3rem;
 }
 
-.centrado {
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .respoReSizeFrames {
   height: auto;
   width: 100%;
+  aspect-ratio: 16/9;
   resize: none;
+  -webkit-box-shadow: 0.4rem 0.4rem 3px rgba(133, 174, 245, 0.4);
+          box-shadow: 0.4rem 0.4rem 3px rgba(133, 174, 245, 0.4);
 }
 
 .decoImagenFix {

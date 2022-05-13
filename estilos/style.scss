@@ -12,13 +12,6 @@ html{
     
 }
 
-.espaciado{
-    padding: 1rem;
-}
-.margen{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 
 /******************Cuerpo Colores*************************/
 body{
@@ -127,7 +120,7 @@ article{
     border: $clrPal4 1rem solid;
     border-radius: 50px;
 }
-.decoImgCaro{
+.decoImgCarousel{
         height: 50vh;
         object-fit: cover;
         border: $clrPal4 5px solid;
@@ -137,15 +130,13 @@ article{
     margin-top: 3rem;
 }
 
-.centrado{
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-}
+
 .respoReSizeFrames{
     height: auto;
     width: 100%;
+    aspect-ratio: 16/9;
     resize:none;
+    box-shadow: 0.4rem 0.4rem 3px $clrSombra ;
 }
 .decoImagenFix{
     height: 12rem;
