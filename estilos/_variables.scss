@@ -1,10 +1,5 @@
 //////////Variables//////////////////////
-//////////Redes//////////////////////
-$clrRedes:(
-    face:#1877f2,
-    insta: #c32aa3,    
-    wsap: #25d366
-);
+
 //////////REM//////////////////////
 $remSize:(
     st: 20px,
@@ -13,10 +8,8 @@ $remSize:(
     sm: 14px
 );
 
-
-
-
 //////////Paleta colores//////////////////////
+
 $clrPal1:#E0FFF2;
 $clrPal2:#f7c5f0;
 $clrPal3: #5174af;
@@ -42,16 +35,28 @@ $tejidos:(
     Macrame: $clrArticle,
 );
 
+//////////Redes//////////////////////
+
+$clrRedes:(
+    face:#1877f2,
+    insta: #c32aa3,    
+    wsap: #25d366
+);
+
 //////////Breakpoints//////////////////////
+
 $bpXL:1200px;
 $bpMd:992px;
 $bpSm:768PX;
 $bpXS:576PX;
 
 //////////Fuentes//////////////////////
+
 $fontTitle: 'Titan One';
 $fontSitio: "Mali";
 $tabFontSize: 1rem;
 
+//////////Generales//////////////////////
 
+$nMacrameImg: 7;
     
