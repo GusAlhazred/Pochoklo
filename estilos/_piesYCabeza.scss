@@ -35,14 +35,13 @@
     z-index: 6;
     .logo{
         height: 7rem;
-        // background-color: $clrArticle;
         border-spacing: 50%;
         border-radius: 40%;
         object-fit: contain;
-        // box-shadow: 0 0 1rem 1rem $clrArticle, 0 0 1rem 1rem rgba(255, 224, 251, 0.5), 0 0 1.5rem 1.5rem rgba(255, 224, 251, 0.25);
         position: relative;
         top:2rem;
         left: 2rem;
+        cursor: pointer;
     }
     .sitioTitulo{    
         @include tituloDelSitio;    
@@ -65,7 +64,6 @@
             &:not(.sele){
                 &:hover {
                     background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
-                    /*transition: 0.2s;*/
                     background-position: left;
                     transform: scale(1.1);
                     font-weight: 900;
@@ -120,8 +118,6 @@
                 text-decoration: none;
                 .hamEle{
                     @extend .hamEleGen;
-                    ///
-                    
                     &:not(.hamSele){
                         &:hover{
                             background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
@@ -156,6 +152,7 @@
         }
         .logoHam{
             width: 3rem;
+            cursor: pointer;
         }
     }
     

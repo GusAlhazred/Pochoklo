@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* color: #85aef5; */
+    
     color: $clrPal3;
     font-family: $fontSitio;
 }
@@ -16,7 +16,6 @@ html{
 /******************Cuerpo Colores*************************/
 body{
     background: linear-gradient(to right, $clrBody1 10%,  $clrPal1  50%, $clrBody1 90%);
-    // background-blend-mode:luminosity;
     
 }
 main{
@@ -61,8 +60,7 @@ article{
 .galeriaTitulo{
     font-size: 1.3rem;
     font-weight: 900;
-    // color: $clrTituloBorde;
-    // mix-blend-mode: exclusion;
+    
 }
 .acordionBodyColor{
     background-color: $clrArticle;
@@ -77,34 +75,6 @@ article{
         @include confAccordeon ($colAco)
     }
 }
-
-
-// .accordion-buttonCrochet{
-//     background-position: center;
-//     background-size: cover;
-//     background-color: $clrPal2;
-//     /* background-image: url(../images/bikini-crochet.jpg); */
-// }
-// .accordion-button2Agujas{
-//     background-position: center;
-//     background-size: cover;
-//     background-color: $clrArticle;
-//     /* background-image: url(../images/remplazo.png); */
-// }
-// .accordion-buttonBordado{
-//     background-position: center;
-//     background-size: cover;
-//     background-color: $clrPal2;
-//     /* background-image: url(../images/llavero1.jpg); */
-// }
-// .accordion-buttonMacrame{
-//     background-position: center;
-//     background-size: cover;
-//     background-color: $clrArticle;
-//     /* background-image: url(../images/alas-macrame.jpg); */
-// }
-
-
 
 
 //////////////// Galeria ////////////////////////////////////////////////////////////
@@ -221,8 +191,6 @@ article{
         &::after{
             content: '';
             background-color: $color;
-            // height: 100px;
-            // width: 100px;
             filter: blur(20px);
             position: absolute;
             top:0;
@@ -237,6 +205,7 @@ article{
 .animat:hover{
     animation-name: Ani-Logo;
     animation-duration: 4s;
+    cursor: pointer;
     
 }
 
@@ -245,12 +214,9 @@ article{
 
     }
     10% {
-        // transform: scaleY(0.5);
-        // transform: ;   
         transform: translateY(-1.5rem)  rotatez(36deg) scale(0.5);     
     }
     100%{
-        // transform: ;
         transform:translateY(0rem) rotatez(360deg) scale(1);
     }
 }

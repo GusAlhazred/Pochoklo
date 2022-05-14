@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* color: #85aef5; */
   color: #5174af;
   font-family: "Mali";
 }
@@ -101,6 +100,7 @@ article {
   position: relative;
   top: 2rem;
   left: 2rem;
+  cursor: pointer;
 }
 
 .cabecera .sitioTitulo {
@@ -130,7 +130,6 @@ article {
 
 .barraNavegacion .listNav .listNavEle:not(.sele):hover, .barraNavegacion .pieDePagina .fNav .listNavEle:not(.sele):hover, .pieDePagina .barraNavegacion .fNav .listNavEle:not(.sele):hover {
   background: radial-gradient(#5174af 60%, #BED2F4);
-  /*transition: 0.2s;*/
   background-position: left;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -230,6 +229,7 @@ article {
 
 .contenedorHamburguesa .BarraHamburguesa .logoHam {
   width: 3rem;
+  cursor: pointer;
 }
 
 .bg-personal {
@@ -637,6 +637,7 @@ article {
           animation-name: Ani-Logo;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  cursor: pointer;
 }
 
 @-webkit-keyframes Ani-Logo {
@@ -878,7 +879,6 @@ article {
   .fGal, .containerGal .fGalC1, .containerGal .fGal2A1, .containerGal .fGal2A2, .containerGal .fGalB1, .containerGal .fGalB2, .containerGal .fGalM1, .containerGal .fGalM2, .containerGal .fGalM3, .containerGal .fGalM4, .containerGal .fGalM5, .containerGal .fGalM6, .containerGal .fGalM7 {
     border: #F9F1DD 1rem solid;
     border-radius: 40px;
-    /* grid-column: 1/2; */
   }
   .barraNavegacion .listNav .listNavEleProp, .barraNavegacion .pieDePagina .fNav .listNavEleProp, .pieDePagina .barraNavegacion .fNav .listNavEleProp, .barraNavegacion .listNav .listNavEle, .barraNavegacion .pieDePagina .fNav .listNavEle, .pieDePagina .barraNavegacion .fNav .listNavEle, .pieDePagina .fNav .barraNavegacion .listNav .fEle, .barraNavegacion .pieDePagina .fNav .fEle, .pieDePagina .barraNavegacion .fNav .fEle {
     width: 1rem;

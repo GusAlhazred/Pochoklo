@@ -26,6 +26,14 @@ $clrTituloBorde:#BED2F4;
 $clrSombra:rgba(133, 174, 245, 0.4);
 
 
+//////////Redes//////////////////////
+
+$clrRedes:(
+    face:#1877f2,
+    insta: #c32aa3,    
+    wsap: #25d366
+);
+
 //////////Colores-Tejidos////////////////////////////////////
 
 $tejidos:(
@@ -35,13 +43,6 @@ $tejidos:(
     Macrame: $clrArticle,
 );
 
-//////////Redes//////////////////////
-
-$clrRedes:(
-    face:#1877f2,
-    insta: #c32aa3,    
-    wsap: #25d366
-);
 
 //////////Breakpoints//////////////////////
 
