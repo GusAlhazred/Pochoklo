@@ -300,11 +300,15 @@ article {
   background-color: #FFE0FB;
 }
 
-.fGal, .containerGal .fGalC1, .containerGal .fGal2A1, .containerGal .fGal2A2, .containerGal .fGalB1, .containerGal .fGalB2, .containerGal .fGalM1, .containerGal .fGalM2, .containerGal .fGalM3, .containerGal .fGalM4, .containerGal .fGalM5, .containerGal .fGalM6, .containerGal .fGalM7 {
+.fGal, .containerGal img {
   border: #F9F1DD 1rem solid;
   border-radius: 50px;
-  background-position: center;
-  background-size: cover;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /*****************************************Galeria********************/
@@ -330,8 +334,6 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url("../images/bikini-crochet.jpg");
-  height: 60vh;
 }
 
 .containerGal .fGal2A1 {
@@ -341,8 +343,6 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url("../images/remplazo.gif");
-  height: 55vh;
 }
 
 .containerGal .fGal2A2 {
@@ -352,8 +352,6 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url("../images/remplazo2.jpg");
-  height: 55vh;
 }
 
 .containerGal .fGalB1 {
@@ -363,8 +361,6 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url("../images/llaveros.jpg");
-  height: 55vh;
 }
 
 .containerGal .fGalB2 {
@@ -374,8 +370,6 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url("../images/llavero1.jpg");
-  height: 55vh;
 }
 
 .containerGal .fGalM1 {
@@ -385,8 +379,6 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  background-image: url("../images/alas-macrame.jpg");
-  height: 55vh;
 }
 
 .containerGal .fGalM2 {
@@ -396,8 +388,6 @@ article {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
-  background-image: url("../images/llavero2.jpg");
-  height: 40vh;
 }
 
 .containerGal .fGalM3 {
@@ -407,8 +397,6 @@ article {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
-  background-image: url("../images/macetero-Macrame.jpg");
-  height: 40vh;
 }
 
 .containerGal .fGalM4 {
@@ -418,8 +406,6 @@ article {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
-  background-image: url("../images/plumas-Macrame.jpg");
-  height: 40vh;
 }
 
 .containerGal .fGalM5 {
@@ -429,8 +415,6 @@ article {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 5;
-  background-image: url("../images/porta-ukelele-Macrame.jpg");
-  height: auto;
 }
 
 .containerGal .fGalM6 {
@@ -440,8 +424,6 @@ article {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 4;
-  background-image: url("../images/atrapasuenios1.jpg");
-  height: 40vh;
 }
 
 .containerGal .fGalM7 {
@@ -451,8 +433,6 @@ article {
   -ms-grid-row: 4;
       grid-row-start: 4;
   grid-row-end: 5;
-  background-image: url("../images/carpeta-corazon-Macrame.jpg");
-  height: 40vh;
 }
 
 /******************Generales*************************/
@@ -671,7 +651,7 @@ article {
   html {
     font-size: 18px;
   }
-  .fGal, .containerGal .fGalC1, .containerGal .fGal2A1, .containerGal .fGal2A2, .containerGal .fGalB1, .containerGal .fGalB2, .containerGal .fGalM1, .containerGal .fGalM2, .containerGal .fGalM3, .containerGal .fGalM4, .containerGal .fGalM5, .containerGal .fGalM6, .containerGal .fGalM7 {
+  .fGal, .containerGal img {
     border: #F9F1DD 10px solid;
     border-radius: 40px;
   }
@@ -775,7 +755,6 @@ article {
         grid-row-start: 5;
     grid-row-end: 7;
     width: 100%;
-    height: 98%;
   }
   .containerGal .fGalM7 {
     -ms-grid-column: 2;
@@ -795,18 +774,18 @@ article {
   .pieDePagina label {
     font-size: 0rem;
   }
-  .fGal, .containerGal .fGalC1, .containerGal .fGal2A1, .containerGal .fGal2A2, .containerGal .fGalB1, .containerGal .fGalB2, .containerGal .fGalM1, .containerGal .fGalM2, .containerGal .fGalM3, .containerGal .fGalM4, .containerGal .fGalM5, .containerGal .fGalM6, .containerGal .fGalM7 {
+  .fGal, .containerGal img {
     border: #F9F1DD 10px solid;
     border-radius: 40px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     width: 100%;
-    height: 33vh;
+    max-height: 50vh;
   }
   .containerGal {
-    -ms-grid-columns: (100%)[1];
-        grid-template-columns: repeat(1, 100%);
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
     /*****************************************Galeria********************/
     /****************Crochet***********************/
     /****************2 Agujas***********************/
@@ -837,58 +816,89 @@ article {
     grid-row: 1/2;
   }
   .containerGal .fGalB2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
   .containerGal .fGalM1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 50vh;
   }
   .containerGal .fGalM2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 50vh;
   }
   .containerGal .fGalM3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 50vh;
   }
   .containerGal .fGalM4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 4;
         grid-row-start: 4;
     grid-row-end: 5;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 50vh;
   }
   .containerGal .fGalM5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 5;
         grid-row-start: 5;
     grid-row-end: 6;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 50vh;
   }
   .containerGal .fGalM6 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 6;
         grid-row-start: 6;
     grid-row-end: 7;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 50vh;
   }
   .containerGal .fGalM7 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     -ms-grid-row: 7;
         grid-row-start: 7;
     grid-row-end: 8;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 50vh;
   }
 }
 
@@ -896,7 +906,7 @@ article {
   html {
     font-size: 14px;
   }
-  .fGal, .containerGal .fGalC1, .containerGal .fGal2A1, .containerGal .fGal2A2, .containerGal .fGalB1, .containerGal .fGalB2, .containerGal .fGalM1, .containerGal .fGalM2, .containerGal .fGalM3, .containerGal .fGalM4, .containerGal .fGalM5, .containerGal .fGalM6, .containerGal .fGalM7 {
+  .fGal, .containerGal img {
     border: #F9F1DD 1rem solid;
     border-radius: 40px;
   }
@@ -909,7 +919,7 @@ article {
 }
 
 @media only screen and (max-width: 576PX) {
-  .fGal, .containerGal .fGalC1, .containerGal .fGal2A1, .containerGal .fGal2A2, .containerGal .fGalB1, .containerGal .fGalB2, .containerGal .fGalM1, .containerGal .fGalM2, .containerGal .fGalM3, .containerGal .fGalM4, .containerGal .fGalM5, .containerGal .fGalM6, .containerGal .fGalM7 {
+  .fGal, .containerGal img {
     border: #F9F1DD 0.5rem solid;
     border-radius: 20px;
   }

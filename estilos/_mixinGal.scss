@@ -1,17 +1,18 @@
 .fGal{
     border: $clrPal4 1rem solid;
     border-radius: 50px;
-    background-position: center;
-    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
-@mixin fGalFoto($colStr, $colEnd, $rowStr, $rowEnd, $img, $height:40vh){
+@mixin fGalFoto($colStr, $colEnd, $rowStr, $rowEnd, $height:40vh){
     grid-column-start: $colStr;
     grid-column-end: $colEnd;
     grid-row-start: $rowStr;
     grid-row-end: $rowEnd;
-    background-image: url($img);
-    height: $height;
+    // height: $height;
 }
 /*****************************************Galeria********************/
 .containerGal {  
@@ -21,60 +22,72 @@
     gap: 0.5rem;
     grid-auto-flow: row;
     
+    img{
+        @extend .fGal;
+    }
     /****************Crochet***********************/
     .fGalC1{
-        @extend .fGal;
-        @include fGalFoto (1, 4, 1, 2, "../images/bikini-crochet.jpg", 60vh);
-    }
+        // @extend .fGal;
+        @include fGalFoto (1, 4, 1, 2, 60vh);
+    };
     /****************2 Agujas***********************/
     .fGal2A1{
-        @extend .fGal;
-        @include fGalFoto (1, 3, 1, 3, "../images/remplazo.gif", 55vh);
+        // @extend .fGal;
+        @include fGalFoto (1, 3, 1, 3, 55vh);
+           
     }
     .fGal2A2{
-        @extend .fGal;
-        @include fGalFoto (3, 4, 1 , 3, "../images/remplazo2.jpg", 55vh)
+        // @extend .fGal;
+        @include fGalFoto (3, 4, 1 , 3,  55vh);
+           
     }
 
     /*****************Bordado********************/
     .fGalB1{
-        @extend .fGal;
-        @include fGalFoto (1, 2, 1 ,2, "../images/llaveros.jpg", 55vh)
+        // @extend .fGal;
+        @include fGalFoto (1, 2, 1 ,2,  55vh);
+           
     }
     .fGalB2{
-        @extend .fGal;
-        @include fGalFoto (2, 4, 1 ,2 ,"../images/llavero1.jpg", 55vh)
+        // @extend .fGal;
+        @include fGalFoto (2, 4, 1 ,2 , 55vh)
+        ;   
     }
 
 
     /*****************Macrame********************/
     .fGalM1{
-        @extend .fGal;
-        @include fGalFoto (1, 4, 1, 2, "../images/alas-macrame.jpg", 55vh)
+        // @extend .fGal;
+        @include fGalFoto (1, 4, 1, 2,  55vh);
+           
     }
     .fGalM2{
-        @extend .fGal;
-        @include fGalFoto (1, 2, 2, 3, "../images/llavero2.jpg")
+        // @extend .fGal;
+        @include fGalFoto (1, 2, 2, 3);
+           
     }
     .fGalM3{
-        @extend .fGal;
-        @include fGalFoto (2, 3, 2, 3, "../images/macetero-Macrame.jpg");
+        // @extend .fGal;
+        @include fGalFoto (2, 3, 2, 3);
+           
     }
     .fGalM4{
-        @extend .fGal;
-        @include fGalFoto (3, 4, 2, 3, "../images/plumas-Macrame.jpg");
+        // @extend .fGal;
+        @include fGalFoto (3, 4, 2, 3, );
+           
     }
     .fGalM5{
-        @extend .fGal;
-        @include fGalFoto (1, 3, 3, 5, "../images/porta-ukelele-Macrame.jpg", auto);
+        // @extend .fGal;
+        @include fGalFoto (1, 3, 3, 5, auto);
+           
     }
     .fGalM6{
-        @extend .fGal;
-        @include fGalFoto (3, 4, 3, 4, "../images/atrapasuenios1.jpg");
+        // @extend .fGal;
+        @include fGalFoto (3, 4, 3, 4);
     }
     .fGalM7{
-        @extend .fGal;
-        @include fGalFoto (3, 4, 4, 5, "../images/carpeta-corazon-Macrame.jpg");
+        // @extend .fGal;
+        @include fGalFoto (3, 4, 4, 5);
         
     }
 }
