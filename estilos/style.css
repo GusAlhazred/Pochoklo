@@ -270,8 +270,15 @@ article {
   width: auto;
 }
 
-.pieDePagina .fNav a {
-  font-size: 0.5rem;
+.pieDePagina a {
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.pieDePagina a:hover {
+  color: rgba(176, 233, 230, 0.95);
+  -webkit-transition: 100ms;
+  transition: 100ms;
 }
 
 /**************************Galeria-Acordeon*************************************/
