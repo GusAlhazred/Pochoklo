@@ -334,6 +334,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
+  height: 60vh;
 }
 
 .containerGal .fGal2A1 {
@@ -343,6 +344,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
+  height: 55vh;
 }
 
 .containerGal .fGal2A2 {
@@ -352,6 +354,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
+  height: 55vh;
 }
 
 .containerGal .fGalB1 {
@@ -361,6 +364,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
+  height: 55vh;
 }
 
 .containerGal .fGalB2 {
@@ -370,6 +374,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
+  height: 55vh;
 }
 
 .containerGal .fGalM1 {
@@ -379,6 +384,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
+  height: 55vh;
 }
 
 .containerGal .fGalM2 {
@@ -388,6 +394,7 @@ article {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
+  height: 100%;
 }
 
 .containerGal .fGalM3 {
@@ -397,6 +404,7 @@ article {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
+  height: 100%;
 }
 
 .containerGal .fGalM4 {
@@ -406,6 +414,7 @@ article {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
+  height: 100%;
 }
 
 .containerGal .fGalM5 {
@@ -415,6 +424,7 @@ article {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 5;
+  height: auto;
 }
 
 .containerGal .fGalM6 {
@@ -424,6 +434,7 @@ article {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 4;
+  height: 100%;
 }
 
 .containerGal .fGalM7 {
@@ -433,6 +444,7 @@ article {
   -ms-grid-row: 4;
       grid-row-start: 4;
   grid-row-end: 5;
+  height: 100%;
 }
 
 /******************Generales*************************/
