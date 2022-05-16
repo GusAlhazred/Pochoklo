@@ -334,7 +334,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  height: 60vh;
+  height: 100%;
 }
 
 .containerGal .fGal2A1 {

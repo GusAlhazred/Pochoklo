@@ -47,7 +47,7 @@
         @include tituloDelSitio;    
         position: relative;
         left: 50%;
-        transform: translate(-100%);
+        transform: translate(-$todo);
     }
 }
 
@@ -95,13 +95,13 @@
 .bg-personal{
     background-color: $clrCabecera;
     color: $clrPal3;
-    width: 100%;
+    width: $todo;
 }
 .hamEleGen{
     padding: 0.5rem;
     border-radius: 10px;
     font-weight: 700;
-    width: 100%;
+    width: $todo;
     .iconNav{
         margin-left: 0.5rem;
         color: $clrTituloBorde;

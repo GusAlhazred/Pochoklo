@@ -3,8 +3,8 @@
     border-radius: 50px;
     object-position: center;
     object-fit: cover;
-    height: 100%;
-    width: 100%;
+    height: $todo;
+    width: $todo;
 }
 
 @mixin fGalFoto($colStr, $colEnd, $rowStr, $rowEnd, $height:100%){
@@ -29,7 +29,7 @@
     }
     /****************Crochet***********************/
     .fGalC1{
-        @include fGalFoto (1, 4, 1, 2, 60vh);
+        @include fGalFoto (1, 4, 1, 2);
         
     };
     /****************2 Agujas***********************/

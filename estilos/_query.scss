@@ -3,7 +3,7 @@
     grid-column-end: $colEnd;
     grid-row-start: $rowStr;
     grid-row-end: $rowEnd;
-    width: 100%;
+    width: $todo;
 }
 
 
@@ -47,7 +47,7 @@
         }
         .fGalM2{
             @include reSize(1, 2, 2, 3);
-            width: 100%;
+            width: $todo;
         }
         .fGalM3{
             @include reSize(2, 3, 2, 3)
@@ -85,7 +85,7 @@
         border: $clrPal4 10px solid;
         border-radius: 40px;
         grid-column: 1/2;
-        width: 100%;
+        width: $todo;
         max-height:50vh;
         
         }
