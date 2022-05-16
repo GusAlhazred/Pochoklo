@@ -31,12 +31,13 @@ main p::first-letter {
 
 main h2 {
   font-weight: 900;
-  text-shadow: 0 0.2rem 1rem rgba(133, 174, 245, 0.4);
+  text-shadow: 0.1rem 0.2rem 0.01rem #FFE0FB;
   text-transform: capitalize;
 }
 
 main h3 {
   font-weight: 700;
+  text-shadow: 0.1rem 0.2rem 0.1rem rgba(133, 174, 245, 0.4);
 }
 
 section {
@@ -160,6 +161,12 @@ article {
 }
 
 /**************************Nav-Hamburguesa*************************************/
+.bg-personal, .contenedorHamburguesa {
+  background-color: rgba(176, 233, 230, 0.95);
+  color: #5174af;
+  width: 100%;
+}
+
 .hamEleGen, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList a .hamEle, .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele {
   padding: 0.5rem;
   border-radius: 10px;
@@ -230,12 +237,6 @@ article {
 .contenedorHamburguesa .BarraHamburguesa .logoHam {
   width: 3rem;
   cursor: pointer;
-}
-
-.bg-personal {
-  background-color: rgba(176, 233, 230, 0.95);
-  color: #5174af;
-  width: 100%;
 }
 
 .editHamburguesa {
@@ -340,7 +341,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
-  background-image: url("../images/remplazo.jpg");
+  background-image: url("../images/remplazo.gif");
   height: 55vh;
 }
 
@@ -844,31 +845,50 @@ article {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .containerGal .fGalM2 {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .containerGal .fGalM3 {
     -ms-grid-row: 3;
         grid-row-start: 3;
     grid-row-end: 4;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .containerGal .fGalM4 {
     -ms-grid-row: 4;
         grid-row-start: 4;
     grid-row-end: 5;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .containerGal .fGalM5 {
     -ms-grid-row: 5;
         grid-row-start: 5;
     grid-row-end: 6;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .containerGal .fGalM6 {
     -ms-grid-row: 6;
         grid-row-start: 6;
     grid-row-end: 7;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .containerGal .fGalM7 {
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 8;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 

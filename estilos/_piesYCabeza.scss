@@ -92,6 +92,11 @@
 }
 
 /**************************Nav-Hamburguesa*************************************/
+.bg-personal{
+    background-color: $clrCabecera;
+    color: $clrPal3;
+    width: 100%;
+}
 .hamEleGen{
     padding: 0.5rem;
     border-radius: 10px;
@@ -107,6 +112,7 @@
     position: fixed;
     visibility: hidden;
     z-index: -10;
+    @extend .bg-personal;
     .contenidoHamburguesaColapsado{
         .hamList{
             text-align: end;
@@ -157,11 +163,7 @@
     }
     
 }
-.bg-personal{
-    background-color: $clrCabecera;
-    color: $clrPal3;
-    width: 100%;
-}
+
 
 .editHamburguesa{
     display: flex;

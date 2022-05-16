@@ -32,11 +32,12 @@ main{
     }
     h2{
         font-weight: 900;
-        text-shadow: 0 0.2rem 1rem $clrSombra;
+        text-shadow: 0.1rem 0.2rem 0.01rem $clrArticle;
         text-transform: capitalize;
     }
     h3{
         font-weight: 700;
+        text-shadow: 0.1rem 0.2rem 0.1rem $clrSombra;
     }
 }
 section{

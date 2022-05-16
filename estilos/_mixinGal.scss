@@ -29,7 +29,7 @@
     /****************2 Agujas***********************/
     .fGal2A1{
         @extend .fGal;
-        @include fGalFoto (1, 3, 1, 3, "../images/remplazo.jpg", 55vh);
+        @include fGalFoto (1, 3, 1, 3, "../images/remplazo.gif", 55vh);
     }
     .fGal2A2{
         @extend .fGal;

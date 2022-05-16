@@ -121,10 +121,11 @@
         /*****************Macrame********************/
 
         
-        @for $i from 1 to $nMacrameImg{
+        @for $i from 1 to $nMacrameImg+1{
             .fGalM#{$i}{
                 grid-row-start: $i;
                 grid-row-end: $i +1;
+                justify-self: center;
             }
         }
     }
