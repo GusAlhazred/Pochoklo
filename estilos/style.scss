@@ -91,6 +91,12 @@ article{
     border: $clrPal4 1rem solid;
     border-radius: 50px;
 }
+.imgTienda{
+    @extend .decoImagen;
+    border-radius: 0;
+    border:  none;
+    
+}
 .decoImgCarousel{
         height: 50vh;
         object-fit: cover;
@@ -166,7 +172,7 @@ article{
     border: 2px solid $clrTituloBorde;
     background-color: $clrArticle;
 }
-
+@import "./tienda";
 
 /*************Animaciones & Similares**********************************************************************************************/
 
@@ -174,7 +180,7 @@ article{
     transition: all 500ms;
 }
 .resaltarAnimacion:hover{
-    transform: scale(1.5);   
+    transform: scale(1.2);   
     border: $clrPal3 0.3rem solid;
     border-radius: 0;
     box-shadow: 0px 0.5rem 0.25rem $clrSombra;

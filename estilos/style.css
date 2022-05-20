@@ -341,7 +341,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  height: 100%;
+  height: 80vh;
 }
 
 .containerGal .fGal2A1 {
@@ -455,7 +455,7 @@ article {
 }
 
 /******************Generales*************************/
-.decoImagen {
+.decoImagen, .imgTienda {
   height: 15rem;
   width: 15rem;
   -o-object-fit: cover;
@@ -463,6 +463,11 @@ article {
   margin: 10px;
   border: #F9F1DD 1rem solid;
   border-radius: 50px;
+}
+
+.imgTienda {
+  border-radius: 0;
+  border: none;
 }
 
 .decoImgCarousel {
@@ -555,6 +560,249 @@ article {
   background-color: #FFE0FB;
 }
 
+a {
+  text-decoration: none;
+}
+
+.botonCarrito {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7rem;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  color: #5174af;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
+  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  border: #F9F1DD 0.2rem solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.botonCarrito i {
+  color: #5174af;
+}
+
+.botonCarrito:hover {
+  color: #f7c5f0;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
+  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  border-color: #f7c5f0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: 0.1rem 0.1rem 1px rgba(133, 174, 245, 0.4);
+}
+
+.botonCarrito:hover i {
+  color: #f7c5f0;
+}
+
+.botonArriba {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7rem;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  color: #5174af;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
+  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  border: #F9F1DD 0.2rem solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.botonArriba i {
+  color: #5174af;
+}
+
+.botonArriba:hover {
+  color: #f7c5f0;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
+  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  border-color: #f7c5f0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: 0.1rem 0.1rem 1px rgba(133, 174, 245, 0.4);
+}
+
+.botonArriba:hover i {
+  color: #f7c5f0;
+}
+
+.botonOfertas {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10.5rem;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  color: #5174af;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
+  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  border: #F9F1DD 0.2rem solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.botonOfertas i {
+  color: #5174af;
+}
+
+.botonOfertas:hover {
+  color: #f7c5f0;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
+  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  border-color: #f7c5f0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: 0.1rem 0.1rem 1px rgba(133, 174, 245, 0.4);
+}
+
+.botonOfertas:hover i {
+  color: #f7c5f0;
+}
+
+.botonRopa {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 14rem;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  color: #5174af;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
+  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  border: #F9F1DD 0.2rem solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.botonRopa i {
+  color: #5174af;
+}
+
+.botonRopa:hover {
+  color: #f7c5f0;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
+  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  border-color: #f7c5f0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: 0.1rem 0.1rem 1px rgba(133, 174, 245, 0.4);
+}
+
+.botonRopa:hover i {
+  color: #f7c5f0;
+}
+
+.botonDecoracion {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 17.5rem;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  color: #5174af;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
+  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  border: #F9F1DD 0.2rem solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.botonDecoracion i {
+  color: #5174af;
+}
+
+.botonDecoracion:hover {
+  color: #f7c5f0;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
+  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  border-color: #f7c5f0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-shadow: 0.1rem 0.1rem 1px rgba(133, 174, 245, 0.4);
+}
+
+.botonDecoracion:hover i {
+  color: #f7c5f0;
+}
+
+.tarjeta {
+  width: 15rem;
+  height: 25rem;
+  background-color: #fffdf6;
+  border-radius: 7px;
+}
+
+.tarjeta .imgFotoCarta {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 3px;
+}
+
+.tarjeta .contTextoCarta {
+  visibility: hidden;
+  font-size: 0rem;
+  line-height: 0rem;
+  height: 0px;
+}
+
 /*************Animaciones & Similares**********************************************************************************************/
 .animacion {
   -webkit-transition: all 500ms;
@@ -562,8 +810,8 @@ article {
 }
 
 .resaltarAnimacion:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   border: #5174af 0.3rem solid;
   border-radius: 0;
   -webkit-box-shadow: 0px 0.5rem 0.25rem rgba(133, 174, 245, 0.4);
@@ -691,6 +939,7 @@ article {
         grid-row-start: 1;
     grid-row-end: 2;
     width: 100%;
+    height: auto;
   }
   .containerGal .fGal2A1 {
     -ms-grid-column: 1;
