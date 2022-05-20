@@ -5,7 +5,7 @@ a{
 @each $boton in $botones{
     .boton#{$boton}{
         position: sticky;
-        top:7rem + $c;
+        top:8.5rem + $c;
         @if $boton!="Carrito"{
             $c: $c + 3.5rem;
         }
@@ -16,6 +16,9 @@ a{
         border-radius: 50%;
         color: $clrPal3;
         background: linear-gradient(to right top , $clrPal2 30%, $clrArticle 60%, $clrPal2 100%);
+        background-repeat: no-repeat;
+        background-size: 800%;
+        background-position:left;
         border: $clrPal4 0.2rem solid;
         justify-content: center;
         align-items: center;
@@ -25,6 +28,7 @@ a{
         }
         &:hover{
             color: $clrPal2;
+            font-weight: 900;
             background: linear-gradient(to right top , $clrPal3 30%, $clrTituloBorde 60%, $clrPal3 100%);
             border-color: $clrPal2;
             transform: scale(1.2);
@@ -37,28 +41,3 @@ a{
     }
 }
 
-.tarjeta{
-    width: 15rem;
-    height: 25rem;
-    background-color: $clrSection2;
-    border-radius: 7px;
-    // .foto{
-    //     height: 30rem;
-        // overflow-x: hidden ;
-    //     border-radius: 3px;
-    .imgFotoCarta{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 3px;
-    }
-    .contTextoCarta{
-        visibility: hidden;
-        font-size: 0rem;
-        line-height: 0rem;
-        height: 0px;
-    }
-
-
-}
