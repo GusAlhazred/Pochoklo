@@ -28,8 +28,9 @@
   position: relative;
   width: 316px;
   height: 216px;
-  border: 8px solid #fff;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border: 8px solid #F9F1DD;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px rgba(133, 174, 245, 0.4);
 }
 .ih-item.square .info {
   position: absolute;
@@ -92,7 +93,8 @@
   font-size: 1rem;
   position: relative;
   color: #5174af;
-  text-shadow: 0.1rem 0.1rem 3px rgba(247, 197, 240, 0.3);
+  text-shadow: 0.1rem 0.1rem 3px #fff,
+              -0.1rem -0.1rem 3px #fff;
   font-weight: 700;
   padding: 1rem 1rem 1rem;
   text-align: center;
