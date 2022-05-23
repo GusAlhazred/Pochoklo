@@ -568,16 +568,16 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 8.5rem;
-  margin: 0.5rem;
+  margin-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
+  width: 4rem;
+  border-radius: 50px;
   color: #5174af;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
-  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#E0FFF2), color-stop(70%, #c2ffe6));
+  background: linear-gradient(to right top, #E0FFF2, #c2ffe6 70%);
   background-repeat: no-repeat;
   background-size: 800%;
   background-position: left;
@@ -599,8 +599,7 @@ a {
 .botonCarrito:hover {
   color: #f7c5f0;
   font-weight: 900;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
-  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  background: radial-gradient(#5174af 60%, #BED2F4);
   border-color: #f7c5f0;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -615,16 +614,16 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 8.5rem;
-  margin: 0.5rem;
+  margin-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
+  width: 4rem;
+  border-radius: 50px;
   color: #5174af;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
-  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#E0FFF2), color-stop(70%, #c2ffe6));
+  background: linear-gradient(to right top, #E0FFF2, #c2ffe6 70%);
   background-repeat: no-repeat;
   background-size: 800%;
   background-position: left;
@@ -646,8 +645,7 @@ a {
 .botonArriba:hover {
   color: #f7c5f0;
   font-weight: 900;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
-  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  background: radial-gradient(#5174af 60%, #BED2F4);
   border-color: #f7c5f0;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -662,16 +660,16 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 12rem;
-  margin: 0.5rem;
+  margin-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
+  width: 4rem;
+  border-radius: 50px;
   color: #5174af;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
-  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#E0FFF2), color-stop(70%, #c2ffe6));
+  background: linear-gradient(to right top, #E0FFF2, #c2ffe6 70%);
   background-repeat: no-repeat;
   background-size: 800%;
   background-position: left;
@@ -693,8 +691,7 @@ a {
 .botonOfertas:hover {
   color: #f7c5f0;
   font-weight: 900;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
-  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  background: radial-gradient(#5174af 60%, #BED2F4);
   border-color: #f7c5f0;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -709,16 +706,16 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 15.5rem;
-  margin: 0.5rem;
+  margin-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
+  width: 4rem;
+  border-radius: 50px;
   color: #5174af;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
-  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#E0FFF2), color-stop(70%, #c2ffe6));
+  background: linear-gradient(to right top, #E0FFF2, #c2ffe6 70%);
   background-repeat: no-repeat;
   background-size: 800%;
   background-position: left;
@@ -740,8 +737,7 @@ a {
 .botonRopa:hover {
   color: #f7c5f0;
   font-weight: 900;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
-  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  background: radial-gradient(#5174af 60%, #BED2F4);
   border-color: #f7c5f0;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -756,16 +752,16 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 19rem;
-  margin: 0.5rem;
+  margin-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
+  width: 4rem;
+  border-radius: 50px;
   color: #5174af;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #f7c5f0), color-stop(60%, #FFE0FB), to(#f7c5f0));
-  background: linear-gradient(to right top, #f7c5f0 30%, #FFE0FB 60%, #f7c5f0 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#E0FFF2), color-stop(70%, #c2ffe6));
+  background: linear-gradient(to right top, #E0FFF2, #c2ffe6 70%);
   background-repeat: no-repeat;
   background-size: 800%;
   background-position: left;
@@ -787,8 +783,7 @@ a {
 .botonDecoracion:hover {
   color: #f7c5f0;
   font-weight: 900;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(30%, #5174af), color-stop(60%, #BED2F4), to(#5174af));
-  background: linear-gradient(to right top, #5174af 30%, #BED2F4 60%, #5174af 100%);
+  background: radial-gradient(#5174af 60%, #BED2F4);
   border-color: #f7c5f0;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -1203,6 +1198,26 @@ a {
     padding: 0.02rem;
   }
   .cTabla {
+    font-size: 0.7rem;
+  }
+  .botonCarrito {
+    width: 3rem;
+    font-size: 0.7rem;
+  }
+  .botonArriba {
+    width: 3rem;
+    font-size: 0.7rem;
+  }
+  .botonOfertas {
+    width: 3rem;
+    font-size: 0.7rem;
+  }
+  .botonRopa {
+    width: 3rem;
+    font-size: 0.7rem;
+  }
+  .botonDecoracion {
+    width: 3rem;
     font-size: 0.7rem;
   }
 }

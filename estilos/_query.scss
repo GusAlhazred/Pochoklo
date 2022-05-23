@@ -182,5 +182,10 @@
     .cTabla{
         font-size: $tabFontSize*0.7;
     }
-        
+    @each $boton in $botones{
+        .boton#{$boton}{
+            width: 3rem;
+            font-size: 0.7rem;
+        }
+    }
 }
