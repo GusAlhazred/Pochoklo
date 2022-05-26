@@ -16,6 +16,7 @@
         border: $clrPal4 10px solid;
         border-radius: 40px;
         
+        
     }
     .containerGal {  
         grid-template-columns: repeat(2, 50%);
@@ -77,6 +78,22 @@
     html{
         font-size: map-get($remSize , md);
     }
+    .barraNavegacion{
+        .listNav{
+            transform: translateX(-40%);
+            .listNavEleProp{
+                width: 1rem;
+            }
+            .iconNav{ 
+                font-size: 0.8rem;
+                margin: 0;
+            }
+            .navNombreMenu{
+                visibility: hidden;
+            }
+        }
+    }
+    
     .pieDePagina{
         label{
         font-size: 0rem;
@@ -87,7 +104,7 @@
         border-radius: 40px;
         grid-column: 1/2;
         width: $todo;
-        max-height:50vh;
+        
         
         }
         

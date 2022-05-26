@@ -1,9 +1,9 @@
 /**************************Barras Navegacion General (Nav y Footer)*************************************************************/
 .listNavEleProp{
     display: inline-block;
-    padding: 0.15rem;
+    padding: 0.2rem;
     height: 1rem;
-    width: 2rem;
+    width: auto;
     list-style: none;
     text-align: center;
     box-sizing: content-box;
@@ -45,9 +45,9 @@
     }
     .sitioTitulo{    
         @include tituloDelSitio;    
-        position: relative;
-        left: 50%;
-        transform: translate(-$todo);
+        // position: relative;
+        // left: 50%;
+        transform: translate(-50%);
     }
 }
 
@@ -55,7 +55,7 @@
 
 .barraNavegacion{
         z-index: 7;
-        transform: translate(-35%);
+        // transform: translate(-35%);
     .listNav{
         padding-inline-start:0;
         margin: 0;
@@ -72,19 +72,33 @@
                     i{
                         color:$clrPal2;
                     }
+                    .navNombreMenu{
+                        color:$clrPal2;
+                    }
                 }
             }
         }
-        
+        .navNombreMenu{
+            font-size: 0.8rem;
+            margin-right: 0.2rem;
+            
+        }
         .iconNav{ 
             color: $clrTituloBorde;
             font-size: 1rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            
         }
         .sele{
             background: linear-gradient(to right, $clrPal2, $clrArticle);
             font-weight: bold;
             border: 2px solid $clrBoton1;
+            
             i{  
+                color: $clrBoton1;
+            }
+            .navNombreMenu{
                 color: $clrBoton1;
             }
         }
@@ -141,11 +155,11 @@
             }
             .hamSele{
                 @extend .hamEleGen;
-                ///
                 background: linear-gradient(to left, $clrPal2, $clrArticle);
                 font-weight: bold;
                 border: 2px solid $clrBoton1;
                 color: $clrBoton1;
+                transform: translateX(-0.5rem);
                 .iconNav{  
                     color: $clrBoton1;
                 }

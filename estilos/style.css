@@ -59,9 +59,9 @@ article {
 /**************************Barras Navegacion General (Nav y Footer)*************************************************************/
 .listNavEleProp, .barraNavegacion .listNav .listNavEle, .barraNavegacion .pieDePagina .fNav .listNavEle, .pieDePagina .barraNavegacion .fNav .listNavEle, .pieDePagina .fNav .fEle {
   display: inline-block;
-  padding: 0.15rem;
+  padding: 0.2rem;
   height: 1rem;
-  width: 2rem;
+  width: auto;
   list-style: none;
   text-align: center;
   -webkit-box-sizing: content-box;
@@ -110,17 +110,13 @@ article {
   -webkit-text-stroke-color: #BED2F4;
   font-variant: small-caps;
   color: #85aef5;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translate(-100%);
-          transform: translate(-100%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 /**************************Barra Navegacion*************************************************************/
 .barraNavegacion {
   z-index: 7;
-  -webkit-transform: translate(-35%);
-          transform: translate(-35%);
 }
 
 .barraNavegacion .listNav, .barraNavegacion .pieDePagina .fNav, .pieDePagina .barraNavegacion .fNav {
@@ -144,9 +140,20 @@ article {
   color: #f7c5f0;
 }
 
+.barraNavegacion .listNav .listNavEle:not(.sele):hover .navNombreMenu, .barraNavegacion .pieDePagina .fNav .listNavEle:not(.sele):hover .navNombreMenu, .pieDePagina .barraNavegacion .fNav .listNavEle:not(.sele):hover .navNombreMenu {
+  color: #f7c5f0;
+}
+
+.barraNavegacion .listNav .navNombreMenu, .barraNavegacion .pieDePagina .fNav .navNombreMenu, .pieDePagina .barraNavegacion .fNav .navNombreMenu {
+  font-size: 0.8rem;
+  margin-right: 0.2rem;
+}
+
 .barraNavegacion .listNav .iconNav, .barraNavegacion .pieDePagina .fNav .iconNav, .pieDePagina .barraNavegacion .fNav .iconNav {
   color: #BED2F4;
   font-size: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .barraNavegacion .listNav .sele, .barraNavegacion .pieDePagina .fNav .sele, .pieDePagina .barraNavegacion .fNav .sele {
@@ -157,6 +164,10 @@ article {
 }
 
 .barraNavegacion .listNav .sele i, .barraNavegacion .pieDePagina .fNav .sele i, .pieDePagina .barraNavegacion .fNav .sele i {
+  color: #c2ffe6;
+}
+
+.barraNavegacion .listNav .sele .navNombreMenu, .barraNavegacion .pieDePagina .fNav .sele .navNombreMenu, .pieDePagina .barraNavegacion .fNav .sele .navNombreMenu {
   color: #c2ffe6;
 }
 
@@ -220,6 +231,8 @@ article {
   font-weight: bold;
   border: 2px solid #c2ffe6;
   color: #c2ffe6;
+  -webkit-transform: translateX(-0.5rem);
+          transform: translateX(-0.5rem);
 }
 
 .contenedorHamburguesa .contenidoHamburguesaColapsado .hamList .hamSele .iconNav {
@@ -341,7 +354,7 @@ article {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  height: 80vh;
+  height: 60vh;
 }
 
 .containerGal .fGal2A1 {
@@ -814,14 +827,29 @@ a {
           transform: scale(1.1);
 }
 
+.sombraRedes:hover {
+  text-shadow: 0.2rem 0.2rem 3px rgba(133, 174, 245, 0.4);
+}
+
 .faceCol:hover {
   color: #1877f2;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  text-shadow: 0.2rem 0.2rem 3px rgba(133, 174, 245, 0.4);
 }
 
-.faceCol:hover::after {
+.instaCol:hover {
+  color: #c32aa3;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.wsapCol:hover {
+  color: #25d366;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.faceBrillo:hover::after {
   content: '';
   background-color: #1877f2;
   -webkit-filter: blur(20px);
@@ -833,14 +861,7 @@ a {
   bottom: 0;
 }
 
-.instaCol:hover {
-  color: #c32aa3;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  text-shadow: 0.2rem 0.2rem 3px rgba(133, 174, 245, 0.4);
-}
-
-.instaCol:hover::after {
+.instaBrillo:hover::after {
   content: '';
   background-color: #c32aa3;
   -webkit-filter: blur(20px);
@@ -852,14 +873,7 @@ a {
   bottom: 0;
 }
 
-.wsapCol:hover {
-  color: #25d366;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  text-shadow: 0.2rem 0.2rem 3px rgba(133, 174, 245, 0.4);
-}
-
-.wsapCol:hover::after {
+.wsapBrillo:hover::after {
   content: '';
   background-color: #25d366;
   -webkit-filter: blur(20px);
@@ -1030,6 +1044,20 @@ a {
   html {
     font-size: 16px;
   }
+  .barraNavegacion .listNav, .barraNavegacion .pieDePagina .fNav, .pieDePagina .barraNavegacion .fNav {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+  .barraNavegacion .listNav .listNavEleProp, .barraNavegacion .pieDePagina .fNav .listNavEleProp, .pieDePagina .barraNavegacion .fNav .listNavEleProp, .barraNavegacion .listNav .listNavEle, .barraNavegacion .pieDePagina .fNav .listNavEle, .pieDePagina .barraNavegacion .fNav .listNavEle, .pieDePagina .fNav .barraNavegacion .listNav .fEle, .barraNavegacion .pieDePagina .fNav .fEle, .pieDePagina .barraNavegacion .fNav .fEle {
+    width: 1rem;
+  }
+  .barraNavegacion .listNav .iconNav, .barraNavegacion .pieDePagina .fNav .iconNav, .pieDePagina .barraNavegacion .fNav .iconNav {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  .barraNavegacion .listNav .navNombreMenu, .barraNavegacion .pieDePagina .fNav .navNombreMenu, .pieDePagina .barraNavegacion .fNav .navNombreMenu {
+    visibility: hidden;
+  }
   .pieDePagina label {
     font-size: 0rem;
   }
@@ -1040,7 +1068,6 @@ a {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     width: 100%;
-    max-height: 50vh;
   }
   .containerGal {
     -ms-grid-columns: (auto)[1];

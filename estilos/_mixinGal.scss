@@ -5,6 +5,7 @@
     object-fit: cover;
     height: $todo;
     width: $todo;
+
 }
 
 @mixin fGalFoto($colStr, $colEnd, $rowStr, $rowEnd, $height:100%){
@@ -13,7 +14,7 @@
     grid-row-start: $rowStr;
     grid-row-end: $rowEnd;
     height: $height;
-    // max-height: 80vh;
+    
 }
 /*****************************************Galeria********************/
 .containerGal {  
@@ -29,7 +30,7 @@
     }
     /****************Crochet***********************/
     .fGalC1{
-        @include fGalFoto (1, 4, 1, 2, 80vh);
+        @include fGalFoto (1, 4, 1, 2, 60vh);
     };
     /****************2 Agujas***********************/
     .fGal2A1{
