@@ -886,6 +886,15 @@ a {
   bottom: 0;
 }
 
+.navBarHover:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0.2rem 0.2rem 3px rgba(133, 174, 245, 0.4);
+          box-shadow: 0.2rem 0.2rem 3px rgba(133, 174, 245, 0.4);
+}
+
 .animat:hover {
   -webkit-animation-name: Ani-Logo;
           animation-name: Ani-Logo;
@@ -1045,19 +1054,17 @@ a {
   html {
     font-size: 16px;
   }
-  .barraNavegacion .listNav, .barraNavegacion .pieDePagina .fNav, .pieDePagina .barraNavegacion .fNav {
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
-  }
-  .barraNavegacion .listNav .listNavEleProp, .barraNavegacion .pieDePagina .fNav .listNavEleProp, .pieDePagina .barraNavegacion .fNav .listNavEleProp, .barraNavegacion .listNav .listNavEle, .barraNavegacion .pieDePagina .fNav .listNavEle, .pieDePagina .barraNavegacion .fNav .listNavEle, .pieDePagina .fNav .barraNavegacion .listNav .fEle, .barraNavegacion .pieDePagina .fNav .fEle, .pieDePagina .barraNavegacion .fNav .fEle {
-    width: 1rem;
-  }
-  .barraNavegacion .listNav .iconNav, .barraNavegacion .pieDePagina .fNav .iconNav, .pieDePagina .barraNavegacion .fNav .iconNav {
-    font-size: 0.8rem;
-    margin: 0;
-  }
-  .barraNavegacion .listNav .navNombreMenu, .barraNavegacion .pieDePagina .fNav .navNombreMenu, .pieDePagina .barraNavegacion .fNav .navNombreMenu {
+  .cabecera {
+    position: fixed;
     visibility: hidden;
+    z-index: -10;
+  }
+  .contenedorHamburguesa {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    visibility: visible;
+    z-index: 6;
   }
   .pieDePagina label {
     font-size: 0rem;
@@ -1209,21 +1216,6 @@ a {
   .fGal, .containerGal img {
     border: #F9F1DD 0.5rem solid;
     border-radius: 20px;
-  }
-  .cabecera {
-    position: fixed;
-    visibility: hidden;
-    z-index: -10;
-  }
-  .contenedorHamburguesa {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    visibility: visible;
-    z-index: 6;
-  }
-  .barraNavegacion .listNav .listNavEle, .barraNavegacion .pieDePagina .fNav .listNavEle, .pieDePagina .barraNavegacion .fNav .listNavEle {
-    padding: 0.02rem;
   }
   .cTabla {
     font-size: 0.7rem;

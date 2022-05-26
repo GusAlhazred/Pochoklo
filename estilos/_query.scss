@@ -78,21 +78,18 @@
     html{
         font-size: map-get($remSize , md);
     }
-    .barraNavegacion{
-        .listNav{
-            transform: translateX(-40%);
-            .listNavEleProp{
-                width: 1rem;
-            }
-            .iconNav{ 
-                font-size: 0.8rem;
-                margin: 0;
-            }
-            .navNombreMenu{
-                visibility: hidden;
-            }
-        }
+    .cabecera{
+        position: fixed;
+        visibility: hidden;
+        z-index: -10;
     }
+    .contenedorHamburguesa{
+        position: sticky;
+        top:0;
+        visibility: visible;
+        z-index: 6;
+    }
+
     
     .pieDePagina{
         label{
@@ -177,25 +174,7 @@
         border: $clrPal4 0.5rem solid;
         border-radius: 20px;
     }
-    .cabecera{
-        position: fixed;
-        visibility: hidden;
-        z-index: -10;
-    }
-    .contenedorHamburguesa{
-        position: sticky;
-        top:0;
-        visibility: visible;
-        z-index: 6;
-    }
-
-    .barraNavegacion{
-        .listNav{
-            .listNavEle{
-                padding: 0.02rem;
-            }
-        }
-    }
+    
     .cTabla{
         font-size: $tabFontSize*0.7;
     }

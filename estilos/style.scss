@@ -217,7 +217,11 @@ article{
     }
 }
 
-
+.navBarHover:hover{
+    transition: 300ms;
+    transform: scale(1.1);
+    box-shadow: 0.2rem 0.2rem 3px $clrSombra;
+}
 
 .animat:hover{
     animation-name: Ani-Logo;
