@@ -205,4 +205,16 @@
             font-size: 0.7rem;
         }
     }
+    .pieDePagina{
+        .fNav{
+            padding: 0;
+            .fEle{
+                padding:0;
+                margin: 0.1rem;
+            }
+            a{
+                font-size: 0.65rem;
+            }
+        }
+    }
 }
