@@ -15,7 +15,6 @@ a{
         width: 4rem;
         border-radius: 50px;
         color: $clrPal3;
-        // background: linear-gradient(to right top , $clrPal2 30%, $clrArticle 60%, $clrPal2 100%);
         background: linear-gradient(to right top, $clrPal1 , $clrBoton1 70%);        
         background-repeat: no-repeat;
         background-size: 800%;
@@ -30,7 +29,6 @@ a{
         &:hover{
             color: $clrPal2;
             font-weight: 900;
-            // background: linear-gradient(to right top , $clrPal3 30%, $clrTituloBorde 60%, $clrPal3 100%);
             background: radial-gradient($clrPal3 60% , $clrTituloBorde); 
             border-color: $clrPal2;
             transform: scale(1.2);

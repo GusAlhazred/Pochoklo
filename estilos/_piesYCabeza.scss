@@ -45,8 +45,6 @@
     }
     .sitioTitulo{    
         @include tituloDelSitio;    
-        // position: relative;
-        // left: 50%;
         transform: translate(-50%);
     }
 }
@@ -55,7 +53,6 @@
 
 .barraNavegacion{
         z-index: 7;
-        // transform: translate(-35%);
     .listNav{
         padding-inline-start:0;
         margin: 0;

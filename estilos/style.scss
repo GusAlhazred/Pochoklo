@@ -202,11 +202,6 @@ article{
         
     }
 }
-// @each $red, $color in $clrRedes{
-//     .#{$red}Sombra:hover{
-//         text-shadow: 0.2rem 0.2rem 3px $clrSombra;
-//     }
-// }
 @each $red, $color in $clrRedes{
     .#{$red}Brillo:hover{
         &::after{
