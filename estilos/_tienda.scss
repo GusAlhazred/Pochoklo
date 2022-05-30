@@ -41,3 +41,31 @@ a{
     }
 }
 
+.contenedorTienda{
+    display: grid;
+    grid-template-columns: 5% 100% 5%;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    
+    .botonIzq{
+        grid-column: 1/2;
+        height: 100%;
+        transform: translateX(5%);
+        z-index: 3;
+    }
+    .contenido{
+        grid-column: 2/3;
+        position: relative;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        transform: translateX(-5%);
+    }
+    .botonesDer{
+        position: relative;
+        left: -14vw;
+        grid-column: 3/4;
+        height: 100%;
+        z-index: 3;
+    }
+}
